@@ -20,9 +20,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         city_box_vis.clipsToBounds = true
-        city_box_vis.layer.cornerRadius = 25.0
-        city_select_box.layer.cornerRadius = 25.0
-        city_select_box.layer.borderWidth = 3.0
+        city_box_vis.layer.cornerRadius = 10.0
+        city_select_box.layer.cornerRadius = 10.0
+        //city_select_box.layer.borderWidth = 2.0
         //city_select_box.layer.borderColor =
         //let darkBlur = UIBlurEffect(style: .dark)
         //let blurView = UIVisualEffectView(effect: darkBlur)

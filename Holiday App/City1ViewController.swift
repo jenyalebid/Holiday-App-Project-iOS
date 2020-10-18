@@ -13,18 +13,16 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var eventTable: UITableView!
     @IBOutlet weak var treesCollectionView: UICollectionView!
     
+    
     @IBOutlet weak var events_visual: UIVisualEffectView!
     @IBOutlet weak var events_box: UIView!
+    
     
     @IBOutlet weak var trees_visual: UIVisualEffectView!
     @IBOutlet weak var trees_box: UIView!
     
     
-    
-    
-    
-    
-
+    @IBOutlet weak var directionsButton: UIButton!
     @IBAction func directions(_ sender: Any) {
         
         let latt:CLLocationDegrees = -123.279484
@@ -39,23 +37,22 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     
-    let events = [
+    let events =
+        ["Dec 19 - Event 1", "Dec 21 - Event 2", "Dec 24 - Event 3", "Dec 26 - Event 4"]
     
-        "Dec 19 - Event 1", "Dec 21 - Event 2", "Dec 24 - Event 3", "Dec 26 - Event 4"
-    
-    
-    ]
-    
-    let dates = ["18", "21"]
+    let dates =
+        ["18", "21"]
     
     
-    let trees = [ "Tree 1", "Tree 2", "Tree 3"]
+    let trees =
+        [ "Tree 1", "Tree 2", "Tree 3"]
     
-    let treeImg: [UIImage] = [UIImage(named: "city.png")!, UIImage(named: "city.png")!, UIImage(named: "city.png")!]
+    let treeImg: [UIImage] =
+        [UIImage(named: "city.png")!, UIImage(named: "city.png")!, UIImage(named: "city.png")!]
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         
         eventTable.delegate = self
         eventTable.dataSource = self
@@ -65,15 +62,19 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         
         events_visual.clipsToBounds = true
-        events_visual.layer.cornerRadius = 25.0
-        events_box.layer.cornerRadius = 25.0
-        events_box.layer.borderWidth = 3.0
+        events_visual.layer.cornerRadius = 10.0
+        events_box.layer.cornerRadius = 10.0
+        //events_box.layer.borderWidth = 2.0
         
         
         trees_visual.clipsToBounds = true
-        trees_visual.layer.cornerRadius = 25.0
-        trees_box.layer.cornerRadius = 25.0
-        trees_box.layer.borderWidth = 3.0
+        trees_visual.layer.cornerRadius = 10.0
+        trees_box.layer.cornerRadius = 10.0
+        //trees_box.layer.borderWidth = 2.0
+        
+        directionsButton.layer.cornerRadius = 10.0
+        //directionsButton.layer.borderWidth = 2.0
+        
             
     }
     
@@ -91,12 +92,11 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         return cell
     }
-    
-    
-
-
 }
 
+
+
+// Events Box Stuff
 
 extension City1ViewController: UITableViewDelegate {
     
@@ -120,7 +120,6 @@ extension City1ViewController: UITableViewDataSource {
         
         cell.textLabel?.highlightedTextColor = .black
         cell.textLabel?.textColor = .systemGray6
-        //event_date_box.text = dates[indexPath.row]
         cell.textLabel?.text = events[indexPath.row]
         
         return cell
@@ -128,37 +127,3 @@ extension City1ViewController: UITableViewDataSource {
     
     
 }
-
-
-/*
-
-extension City1ViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        print("Test Tap")
-    }
-    
-}
-
-
-extension City1ViewController: UICollectionViewDataSource {
-    
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return trees.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tree_cell", for: <#T##IndexPath#>) as! TreesCollectionViewCell
-        
-        cell.TreeTypeNames.text = trees[indexPath.row]
-        
-        return cell
-    }
-    
-    
-}
-*/

@@ -24,6 +24,9 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var trees_box: UIView!
     
     
+    @IBOutlet weak var location_map: MKMapView!
+    
+    
     
     
     
@@ -66,8 +69,8 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         super.viewDidLoad()
         
-        eventTable.delegate = self
-        eventTable.dataSource = self
+        //eventTable.delegate = self
+        //eventTable.dataSource = self
         
         treesCollectionView.delegate = self
         treesCollectionView.dataSource = self
@@ -82,9 +85,27 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         trees_box.layer.cornerRadius = 10.0
         //trees_box.layer.borderWidth = 2.0
         
+        
+        
         directionsButton.layer.cornerRadius = 10.0
         //directionsButton.layer.borderWidth = 2.0
+        
+        // Set initial location in Honolulu
+        let initialLocation = CLLocation(latitude: 38.242910, longitude: -122.631610)
+        //var coordinate = CLLocationCoordinate2D(latitude: 38.242910, longitude: -122.63161)
+        
+        let lot_location = MKPointAnnotation()
+        lot_location.title = "Pronzini Christmas Trees"
+        lot_location.coordinate = CLLocationCoordinate2D(latitude: 38.242910, longitude: -122.631610)
+        
+        location_map.centerToLocation(initialLocation)
+        location_map.addAnnotation(lot_location)
+
+
+
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -124,6 +145,7 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         cell.treeTypeLabel.text = trees[indexPath.item]
         cell.treeTypeImage.image = treeImg[indexPath.item]
+        cell.treeTypeImage.layer.cornerRadius = 10.0
         
         return cell
     }
@@ -170,4 +192,18 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         return cell
     }
+}
+
+
+private extension MKMapView {
+  func centerToLocation(
+    _ location: CLLocation,
+    regionRadius: CLLocationDistance = 600
+  ) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }

@@ -39,6 +39,8 @@ class Trees1ViewController: UIViewController {
         
         print("On trees", localIndex)
         
+       
+        
         treeType_title.text = treeType_titles[localIndex]
         treeType_price.text = treeType_prices[localIndex]
         treeType_desc.text = treeType_descriptions[localIndex]

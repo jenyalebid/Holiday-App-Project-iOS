@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        city_box_vis.clipsToBounds = true
+        //city_box_vis.clipsToBounds = true
         city_box_vis.layer.cornerRadius = 10.0
         city_select_box.layer.cornerRadius = 10.0
         //city_select_box.layer.borderWidth = 2.0

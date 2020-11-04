@@ -14,10 +14,13 @@
 		B12B4374253A8DE20082BDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12B4373253A8DE20082BDCF /* Assets.xcassets */; };
 		B12B4377253A8DE20082BDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12B4375253A8DE20082BDCF /* LaunchScreen.storyboard */; };
 		B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4380253A8EE30082BDCF /* City1ViewController.swift */; };
-		B12B4384253A8EF60082BDCF /* City2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4383253A8EF60082BDCF /* City2ViewController.swift */; };
-		B12B4387253A8F030082BDCF /* City3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4386253A8F030082BDCF /* City3ViewController.swift */; };
-		B1BCDEFF253B71BE00FDC3BB /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDEFE253B71BE00FDC3BB /* EventsViewController.swift */; };
-		B1BCDF06253B83FA00FDC3BB /* TreesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF05253B83FA00FDC3BB /* TreesCollectionViewCell.swift */; };
+		B1579CD42551F817002F4299 /* Events2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CD02551F817002F4299 /* Events2ViewController.swift */; };
+		B1579CD52551F817002F4299 /* City2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CD12551F817002F4299 /* City2ViewController.swift */; };
+		B1579CD62551F817002F4299 /* Trees2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CD22551F817002F4299 /* Trees2CollectionViewCell.swift */; };
+		B1579CD72551F817002F4299 /* Trees2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CD32551F817002F4299 /* Trees2ViewController.swift */; };
+		B1BCDEFF253B71BE00FDC3BB /* Events1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDEFE253B71BE00FDC3BB /* Events1ViewController.swift */; };
+		B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */; };
+		B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +33,13 @@
 		B12B4376253A8DE20082BDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12B4378253A8DE20082BDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12B4380253A8EE30082BDCF /* City1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City1ViewController.swift; sourceTree = "<group>"; };
-		B12B4383253A8EF60082BDCF /* City2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City2ViewController.swift; sourceTree = "<group>"; };
-		B12B4386253A8F030082BDCF /* City3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City3ViewController.swift; sourceTree = "<group>"; };
-		B1BCDEFE253B71BE00FDC3BB /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
-		B1BCDF05253B83FA00FDC3BB /* TreesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B1579CD02551F817002F4299 /* Events2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events2ViewController.swift; sourceTree = "<group>"; };
+		B1579CD12551F817002F4299 /* City2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City2ViewController.swift; sourceTree = "<group>"; };
+		B1579CD22551F817002F4299 /* Trees2CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trees2CollectionViewCell.swift; sourceTree = "<group>"; };
+		B1579CD32551F817002F4299 /* Trees2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trees2ViewController.swift; sourceTree = "<group>"; };
+		B1BCDEFE253B71BE00FDC3BB /* Events1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events1ViewController.swift; sourceTree = "<group>"; };
+		B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1CollectionViewCell.swift; sourceTree = "<group>"; };
+		B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +74,37 @@
 			children = (
 				B12B436A253A8DE00082BDCF /* AppDelegate.swift */,
 				B12B436C253A8DE00082BDCF /* SceneDelegate.swift */,
-				B12B436E253A8DE00082BDCF /* ViewController.swift */,
-				B12B4380253A8EE30082BDCF /* City1ViewController.swift */,
-				B12B4383253A8EF60082BDCF /* City2ViewController.swift */,
-				B12B4386253A8F030082BDCF /* City3ViewController.swift */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
-				B1BCDF05253B83FA00FDC3BB /* TreesCollectionViewCell.swift */,
-				B1BCDEFE253B71BE00FDC3BB /* EventsViewController.swift */,
+				B12B436E253A8DE00082BDCF /* ViewController.swift */,
+				B1579CCF2551F817002F4299 /* Lot 2 */,
+				B1BCDF0F253D4D7300FDC3BB /* Lot 1 */,
 				B12B4373253A8DE20082BDCF /* Assets.xcassets */,
 				B12B4375253A8DE20082BDCF /* LaunchScreen.storyboard */,
 				B12B4378253A8DE20082BDCF /* Info.plist */,
 			);
 			path = "Holiday App";
+			sourceTree = "<group>";
+		};
+		B1579CCF2551F817002F4299 /* Lot 2 */ = {
+			isa = PBXGroup;
+			children = (
+				B1579CD02551F817002F4299 /* Events2ViewController.swift */,
+				B1579CD12551F817002F4299 /* City2ViewController.swift */,
+				B1579CD22551F817002F4299 /* Trees2CollectionViewCell.swift */,
+				B1579CD32551F817002F4299 /* Trees2ViewController.swift */,
+			);
+			path = "Lot 2";
+			sourceTree = "<group>";
+		};
+		B1BCDF0F253D4D7300FDC3BB /* Lot 1 */ = {
+			isa = PBXGroup;
+			children = (
+				B12B4380253A8EE30082BDCF /* City1ViewController.swift */,
+				B1BCDEFE253B71BE00FDC3BB /* Events1ViewController.swift */,
+				B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */,
+				B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */,
+			);
+			path = "Lot 1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,12 +179,15 @@
 			files = (
 				B12B436F253A8DE00082BDCF /* ViewController.swift in Sources */,
 				B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */,
-				B1BCDF06253B83FA00FDC3BB /* TreesCollectionViewCell.swift in Sources */,
+				B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */,
 				B12B436B253A8DE00082BDCF /* AppDelegate.swift in Sources */,
+				B1579CD52551F817002F4299 /* City2ViewController.swift in Sources */,
+				B1579CD72551F817002F4299 /* Trees2ViewController.swift in Sources */,
+				B1579CD42551F817002F4299 /* Events2ViewController.swift in Sources */,
+				B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */,
+				B1579CD62551F817002F4299 /* Trees2CollectionViewCell.swift in Sources */,
 				B12B436D253A8DE00082BDCF /* SceneDelegate.swift in Sources */,
-				B1BCDEFF253B71BE00FDC3BB /* EventsViewController.swift in Sources */,
-				B12B4384253A8EF60082BDCF /* City2ViewController.swift in Sources */,
-				B12B4387253A8F030082BDCF /* City3ViewController.swift in Sources */,
+				B1BCDEFF253B71BE00FDC3BB /* Events1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

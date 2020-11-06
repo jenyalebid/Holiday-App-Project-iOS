@@ -10,10 +10,30 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        var vc: UIViewController
+//
+//
+//        if (UserDefaults.standard.value(forKey: "lot1") as? String) == nil {
+//
+//            // show stuff
+//            vc = storyboard.instantiateViewController(withIdentifier: "City1ViewController")
+//        }
+//        else {
+//
+//            //stuff
+//            vc = storyboard.instantiateInitialViewController()!
+//        }
+//
+//        self.window?.rootViewController = vc
+//        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

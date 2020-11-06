@@ -14,6 +14,12 @@
 		B12B4374253A8DE20082BDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12B4373253A8DE20082BDCF /* Assets.xcassets */; };
 		B12B4377253A8DE20082BDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12B4375253A8DE20082BDCF /* LaunchScreen.storyboard */; };
 		B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4380253A8EE30082BDCF /* City1ViewController.swift */; };
+		B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CDB2554922B002F4299 /* AboutVC.swift */; };
+		B1B7E74325551A6C0023A596 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B7E74225551A6C0023A596 /* data.json */; };
+		B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E74925551DAB0023A596 /* Trees.swift */; };
+		B1B7E74D255526630023A596 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E74C255526630023A596 /* DataLoader.swift */; };
+		B1B7E75025552E040023A596 /* lots.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B7E74F25552E040023A596 /* lots.json */; };
+		B1B7E75325552F7B0023A596 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E75225552F7B0023A596 /* Lots.swift */; };
 		B1BCDEFF253B71BE00FDC3BB /* Events1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDEFE253B71BE00FDC3BB /* Events1ViewController.swift */; };
 		B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */; };
 		B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */; };
@@ -29,6 +35,12 @@
 		B12B4376253A8DE20082BDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12B4378253A8DE20082BDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12B4380253A8EE30082BDCF /* City1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City1ViewController.swift; sourceTree = "<group>"; };
+		B1579CDB2554922B002F4299 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		B1B7E74225551A6C0023A596 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B1B7E74925551DAB0023A596 /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
+		B1B7E74C255526630023A596 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		B1B7E74F25552E040023A596 /* lots.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lots.json; sourceTree = "<group>"; };
+		B1B7E75225552F7B0023A596 /* Lots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		B1BCDEFE253B71BE00FDC3BB /* Events1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events1ViewController.swift; sourceTree = "<group>"; };
 		B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1CollectionViewCell.swift; sourceTree = "<group>"; };
 		B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +79,13 @@
 				B12B436A253A8DE00082BDCF /* AppDelegate.swift */,
 				B12B436C253A8DE00082BDCF /* SceneDelegate.swift */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
+				B1579CDB2554922B002F4299 /* AboutVC.swift */,
 				B12B436E253A8DE00082BDCF /* ViewController.swift */,
+				B1B7E74C255526630023A596 /* DataLoader.swift */,
+				B1B7E74925551DAB0023A596 /* Trees.swift */,
+				B1B7E74225551A6C0023A596 /* data.json */,
+				B1B7E75225552F7B0023A596 /* Lots.swift */,
+				B1B7E74F25552E040023A596 /* lots.json */,
 				B1BCDF0F253D4D7300FDC3BB /* Lot 1 */,
 				B12B4373253A8DE20082BDCF /* Assets.xcassets */,
 				B12B4375253A8DE20082BDCF /* LaunchScreen.storyboard */,
@@ -146,7 +164,9 @@
 			files = (
 				B12B4377253A8DE20082BDCF /* LaunchScreen.storyboard in Resources */,
 				B12B4374253A8DE20082BDCF /* Assets.xcassets in Resources */,
+				B1B7E75025552E040023A596 /* lots.json in Resources */,
 				B12B4372253A8DE00082BDCF /* Main.storyboard in Resources */,
+				B1B7E74325551A6C0023A596 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B7E75325552F7B0023A596 /* Lots.swift in Sources */,
+				B1B7E74D255526630023A596 /* DataLoader.swift in Sources */,
+				B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */,
 				B12B436F253A8DE00082BDCF /* ViewController.swift in Sources */,
 				B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */,
 				B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */,
 				B12B436B253A8DE00082BDCF /* AppDelegate.swift in Sources */,
+				B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */,
 				B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */,
 				B12B436D253A8DE00082BDCF /* SceneDelegate.swift in Sources */,
 				B1BCDEFF253B71BE00FDC3BB /* Events1ViewController.swift in Sources */,

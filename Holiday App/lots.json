@@ -1,0 +1,23 @@
+[
+    {
+        "lotID" : 0,
+        "lotName" : "Pronzini Christmas Trees",
+        "lotTreeTypes" : [0, 1, 2, 3, 4, 5],
+        "lotLatCoord" : 38.242910,
+        "lotLongCoord" : -122.631610
+    },
+    {
+        "lotID" : 1,
+        "lotName" : "Pumpkin City Christmas Trees",
+        "lotTreeTypes" : [1, 2, 3, 5],
+        "lotLatCoord" : 38.242910,
+        "lotLongCoord" : -122.631610
+    },
+    {
+        "lotID" : 2,
+        "lotName" : "English Gardens",
+        "lotTreeTypes" : [1, 2, 3, 5],
+        "lotLatCoord" : 38.242910,
+        "lotLongCoord" : -122.631610
+    },
+]

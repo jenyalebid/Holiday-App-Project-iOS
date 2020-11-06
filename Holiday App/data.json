@@ -1,0 +1,44 @@
+[
+    {
+        "treeID" : 0,
+        "treeName" : "Silvertip Fir",
+        "treeFrontImg" : "silvertip.png",
+        "treeBackImg" : "silvertipBack.png",
+        "treeDesc" : "This is so good of a description."
+    },
+    {
+        "treeID" : 1,
+        "treeName" : "Douglas Fir",
+        "treeFrontImg" : "douglas.png",
+        "treeBackImg" : "douglasBack.png",
+        "treeDesc" : "This is so good of a description."
+    },
+    {
+        "treeID" : 2,
+        "treeName" : "Nordmann Fir",
+        "treeFrontImg" : "nordmann.png",
+        "treeBackImg" : "nordmannBack.png",
+        "treeDesc" : "This is so good of a description."
+    },
+    {
+        "treeID" : 3,
+        "treeName" : "Noble Fir",
+        "treeFrontImg" : "noble.png",
+        "treeBackImg" : "nobleBack.png",
+        "treeDesc" : "This is so good of a description."
+    },
+    {
+        "treeID" : 4,
+        "treeName" : "Grand Fir",
+        "treeFrontImg" : "grand.png",
+        "treeBackImg" : "grandBack.png",
+        "treeDesc" : "This is so good of a description."
+    },
+    {
+        "treeID" : 5,
+        "treeName" : "Fraser Fir",
+        "treeFrontImg" : "fraser.png",
+        "treeBackImg" : "fraserBack.png",
+        "treeDesc" : "This is so good of a description."
+    },
+]

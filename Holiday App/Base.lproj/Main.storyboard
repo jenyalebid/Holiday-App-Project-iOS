@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" interfaceStyle="light" id="BYZ-38-t0r" customClass="ViewController" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="City1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,21 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ug-V2-9In">
                                             <rect key="frame" x="0.0" y="46" width="288" height="100"/>
                                             <connections>
-                                                <segue destination="Tuy-n7-MtN" kind="show" id="L8U-Vo-Jcz"/>
+                                                <action selector="city1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clD-s0-9La"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkR-q8-dqU">
+                                            <rect key="frame" x="0.0" y="158" width="288" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="city2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWb-GY-uvz"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U7-FL-4pp">
+                                            <rect key="frame" x="0.0" y="270" width="288" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="city3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLy-x9-l5K"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -152,7 +166,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="384" id="YG6-5b-dQ4"/>
                                 </constraints>
-                                <blurEffect style="light"/>
+                                <blurEffect style="systemChromeMaterialLight"/>
                             </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -168,19 +182,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="6l6-tq-1QZ"/>
                     <connections>
-                        <outlet property="city1" destination="2Ug-V2-9In" id="AFZ-aP-3Qp"/>
+                        <outlet property="city1" destination="2Ug-V2-9In" id="pPn-wd-jHR"/>
+                        <outlet property="city2" destination="AkR-q8-dqU" id="91Q-tT-IdP"/>
+                        <outlet property="city3" destination="0U7-FL-4pp" id="0Iw-1R-YU9"/>
                         <outlet property="city_box_vis" destination="zLc-w3-Bhm" id="dxK-bg-TcT"/>
                         <outlet property="city_select_box" destination="Wkh-na-zn6" id="45S-OI-zel"/>
+                        <segue destination="Tuy-n7-MtN" kind="show" identifier="lot_seg" id="j3V-Lw-5IB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="-137.32394366197184"/>
+            <point key="canvasLocation" x="422" y="-137"/>
         </scene>
         <!--City1 View Controller-->
         <scene sceneID="kmQ-Qm-vca">
             <objects>
-                <viewController id="Tuy-n7-MtN" customClass="City1ViewController" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="City1ViewController" modalPresentationStyle="fullScreen" interfaceStyle="light" id="Tuy-n7-MtN" customClass="City1ViewController" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9KM-BZ-aqR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +206,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pronzini Christmas Trees" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-bn-8mb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Name" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-bn-8mb">
                                 <rect key="frame" x="151" y="20" width="125" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="oL6-tu-PFl"/>
@@ -237,14 +254,26 @@
                                                 <constraint firstAttribute="width" constant="112" id="gQz-GO-e9R"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-sx-NgW">
+                                            <rect key="frame" x="0.0" y="89" width="75" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="Ftk-lp-0Uc"/>
+                                                <constraint firstAttribute="height" constant="70" id="WAs-t7-fqv"/>
+                                            </constraints>
+                                            <connections>
+                                                <segue destination="YuP-Ym-AV0" kind="presentation" identifier="offer_seg" id="r6J-Pg-Uu3"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="aLI-UZ-thn" firstAttribute="top" secondItem="Ted-nr-owo" secondAttribute="top" constant="8" id="21x-1r-B6U"/>
                                         <constraint firstItem="aLI-UZ-thn" firstAttribute="leading" secondItem="Ted-nr-owo" secondAttribute="leading" constant="8" id="2Pg-J5-QQ7"/>
                                         <constraint firstAttribute="bottom" secondItem="aLI-UZ-thn" secondAttribute="bottom" constant="8" id="QNf-Kf-RVZ"/>
                                         <constraint firstAttribute="bottom" secondItem="8x2-MC-TcK" secondAttribute="bottom" constant="-34" id="ecY-KB-qRU"/>
+                                        <constraint firstAttribute="bottom" secondItem="3gv-sx-NgW" secondAttribute="bottom" id="kF1-2V-Uh3"/>
                                         <constraint firstAttribute="trailing" secondItem="aLI-UZ-thn" secondAttribute="trailing" constant="8" id="lfb-KJ-pUX"/>
                                         <constraint firstItem="8x2-MC-TcK" firstAttribute="leading" secondItem="Ted-nr-owo" secondAttribute="leading" constant="-21" id="mcu-Lz-nAK"/>
+                                        <constraint firstItem="3gv-sx-NgW" firstAttribute="leading" secondItem="Ted-nr-owo" secondAttribute="leading" id="yys-Qz-BD2"/>
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -326,7 +355,7 @@
                                     <constraint firstAttribute="height" constant="20" id="mMa-G7-ett"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="gr1-ZT-KrU" kind="show" id="yDg-Xi-RDO"/>
+                                    <segue destination="gr1-ZT-KrU" kind="presentation" identifier="about_seg" id="yDg-Xi-RDO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -355,15 +384,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hXE-wq-nIH"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="directionsButton" destination="wgf-o6-qgk" id="3qF-Mq-ELB"/>
-                        <outlet property="events_box" destination="Ted-nr-owo" id="Rja-hx-A9G"/>
-                        <outlet property="events_visual" destination="d2i-Sc-RML" id="Pco-b2-ChR"/>
                         <outlet property="location_map" destination="aLI-UZ-thn" id="vVW-JD-gtu"/>
+                        <outlet property="lot_name" destination="Bvg-bn-8mb" id="spv-zT-GQb"/>
+                        <outlet property="map_box" destination="aLI-UZ-thn" id="DjE-dZ-Mmx"/>
+                        <outlet property="map_visual" destination="d2i-Sc-RML" id="tHK-Ym-mej"/>
                         <outlet property="treesCollectionView" destination="AbG-Eo-nJD" id="PLA-Rh-vZo"/>
                         <outlet property="trees_box" destination="HXd-AP-ba5" id="bHd-yz-kXY"/>
                         <outlet property="trees_visual" destination="yPx-bB-ftK" id="hg2-sb-NvR"/>
-                        <segue destination="YuP-Ym-AV0" kind="presentation" identifier="event_seg" id="fEv-Hr-tmf"/>
                         <segue destination="At2-cN-kUf" kind="presentation" identifier="tree_seg" id="pyI-yx-tq8"/>
                     </connections>
                 </viewController>
@@ -378,75 +408,21 @@
                     <view key="view" contentMode="scaleToFill" id="Lza-15-oJC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="ZeP-cM-fsK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9V-cr-5LQ">
-                                <rect key="frame" x="16" y="268" width="288" height="38.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38.5" id="p80-f5-OQ0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At 7:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uia-G0-hHV">
-                                <rect key="frame" x="16" y="314.5" width="288" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="CDR-ch-b34"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAP-FW-5g0">
-                                <rect key="frame" x="16" y="349" width="288" height="179"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="179" id="Vtj-DS-2Xq"/>
-                                </constraints>
-                                <string key="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in urna nec tellus pellentesque porttitor. Mauris velit metus, consectetur sed nisi at, aliquet tristique dolor. Nullam sit amet risus erat. Nunc pharetra at velit in consectetur. Donec convallis quis dui sit amet malesuada. Curabitur eu pulvinar eros, a vehicula massa. Duis aliquet posuere nisl, in lobortis diam.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LOn-81-lxk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="w9V-cr-5LQ" firstAttribute="leading" secondItem="uia-G0-hHV" secondAttribute="leading" id="2HL-BK-JBb"/>
-                            <constraint firstItem="IAP-FW-5g0" firstAttribute="top" secondItem="uia-G0-hHV" secondAttribute="bottom" constant="8.5" id="3jx-y2-FJ7"/>
-                            <constraint firstAttribute="trailing" secondItem="ZeP-cM-fsK" secondAttribute="trailing" id="7nQ-Dw-I6a"/>
-                            <constraint firstItem="w9V-cr-5LQ" firstAttribute="leading" secondItem="Lza-15-oJC" secondAttribute="leadingMargin" id="BNt-gp-oIB"/>
-                            <constraint firstItem="uia-G0-hHV" firstAttribute="leading" secondItem="IAP-FW-5g0" secondAttribute="leading" id="Ha7-8L-XNT"/>
-                            <constraint firstItem="ZeP-cM-fsK" firstAttribute="top" secondItem="LOn-81-lxk" secondAttribute="top" id="Jb3-fs-PI2"/>
-                            <constraint firstItem="w9V-cr-5LQ" firstAttribute="trailing" secondItem="uia-G0-hHV" secondAttribute="trailing" id="R2Y-tf-28y"/>
-                            <constraint firstItem="uia-G0-hHV" firstAttribute="trailing" secondItem="IAP-FW-5g0" secondAttribute="trailing" id="ZJN-7C-M66"/>
-                            <constraint firstItem="uia-G0-hHV" firstAttribute="top" secondItem="w9V-cr-5LQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Zbi-fE-srg"/>
-                            <constraint firstItem="ZeP-cM-fsK" firstAttribute="centerX" secondItem="w9V-cr-5LQ" secondAttribute="centerX" id="nJc-SM-Ai4"/>
-                            <constraint firstItem="ZeP-cM-fsK" firstAttribute="leading" secondItem="Lza-15-oJC" secondAttribute="leading" id="oim-R1-5vf"/>
-                            <constraint firstAttribute="bottom" secondItem="IAP-FW-5g0" secondAttribute="bottom" constant="20" symbolic="YES" id="sTl-ah-YB5"/>
-                            <constraint firstItem="w9V-cr-5LQ" firstAttribute="top" secondItem="ZeP-cM-fsK" secondAttribute="bottom" constant="8" symbolic="YES" id="zP6-WJ-3jd"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="evM-nR-izY"/>
-                    <connections>
-                        <outlet property="event_date_time" destination="uia-G0-hHV" id="BRo-aP-lOw"/>
-                        <outlet property="event_description" destination="IAP-FW-5g0" id="Ybs-8X-yqx"/>
-                        <outlet property="event_image" destination="ZeP-cM-fsK" id="UZv-A4-buE"/>
-                        <outlet property="event_title" destination="w9V-cr-5LQ" id="vjw-Gg-iOi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K63-Vl-2eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3586.875" y="-813.38028169014081"/>
+            <point key="canvasLocation" x="3587" y="-879"/>
         </scene>
-        <!--View Controller-->
+        <!--AboutVC-->
         <scene sceneID="vtt-pn-eIV">
             <objects>
-                <viewController id="gr1-ZT-KrU" sceneMemberID="viewController">
+                <viewController id="gr1-ZT-KrU" customClass="AboutVC" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7rj-Nj-mAw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App Version 1.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX5-X9-lGj">
@@ -463,8 +439,14 @@
                                 <state key="normal" title="Select a diffirent city">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="X4z-xF-uqZ" kind="show" id="kVb-qj-lnn">
+                                        <segue key="commit" inheritsFrom="parent" id="3Ba-j8-sdV"/>
+                                        <segue key="preview" inheritsFrom="commit" id="GGc-5z-A1J"/>
+                                    </segue>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMc-6u-2iU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMc-6u-2iU">
                                 <rect key="frame" x="93.5" y="64" width="133" height="61"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
                                 <nil key="textColor"/>
@@ -474,21 +456,24 @@
                         <viewLayoutGuide key="safeArea" id="2NZ-qV-QH8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GMc-6u-2iU" firstAttribute="top" secondItem="2NZ-qV-QH8" secondAttribute="top" constant="64" id="MHJ-MC-wbd"/>
                             <constraint firstItem="GMc-6u-2iU" firstAttribute="centerX" secondItem="7rj-Nj-mAw" secondAttribute="centerX" id="ehD-rE-wFM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="C5W-mW-IK5"/>
+                    <navigationItem key="navigationItem" id="IOt-9F-6En"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjQ-so-9jA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2790" y="677"/>
+            <point key="canvasLocation" x="2310" y="640"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iNp-xR-r42">
             <objects>
-                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="X4z-xF-uqZ" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="X4z-xF-uqZ" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0kJ-Oc-wmC"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t6g-g2-zco">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -499,7 +484,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTX-S9-Yx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="-136"/>
+            <point key="canvasLocation" x="-679" y="-137"/>
         </scene>
         <!--Trees1 View Controller-->
         <scene sceneID="u0I-ad-tZV">
@@ -510,33 +495,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="RN9-0e-4VJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="272"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tree Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-8y-V3b">
-                                <rect key="frame" x="16" y="268" width="288" height="38.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38.5" id="5AT-Jd-YTg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40C-ay-3jX">
-                                <rect key="frame" x="16" y="349" width="288" height="179"/>
+                                <rect key="frame" x="16" y="328" width="288" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="179" id="CrZ-O2-mhc"/>
+                                    <constraint firstAttribute="height" constant="200" id="BMw-mb-UYl"/>
                                 </constraints>
                                 <string key="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in urna nec tellus pellentesque porttitor. Mauris velit metus, consectetur sed nisi at, aliquet tristique dolor. Nullam sit amet risus erat. Nunc pharetra at velit in consectetur. Donec convallis quis dui sit amet malesuada. Curabitur eu pulvinar eros, a vehicula massa. Duis aliquet posuere nisl, in lobortis diam.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tree Price Range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-gl-jY8">
-                                <rect key="frame" x="16" y="314.5" width="288" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tree Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-8y-V3b">
+                                <rect key="frame" x="16" y="280" width="288" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="ySG-8l-BuB"/>
+                                    <constraint firstAttribute="height" constant="40" id="ghw-Lf-Kca"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -544,33 +520,32 @@
                         <viewLayoutGuide key="safeArea" id="MUy-g3-uMy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QAg-8y-V3b" firstAttribute="trailing" secondItem="jgn-gl-jY8" secondAttribute="trailing" id="0cR-Ne-MkJ"/>
-                            <constraint firstItem="RN9-0e-4VJ" firstAttribute="top" secondItem="MUy-g3-uMy" secondAttribute="top" id="7OG-OC-zYB"/>
-                            <constraint firstItem="QAg-8y-V3b" firstAttribute="leading" secondItem="r5R-fW-OZT" secondAttribute="leadingMargin" id="ADT-Fk-V8w"/>
-                            <constraint firstItem="jgn-gl-jY8" firstAttribute="top" secondItem="QAg-8y-V3b" secondAttribute="bottom" constant="8" symbolic="YES" id="Ina-yZ-yyt"/>
-                            <constraint firstItem="jgn-gl-jY8" firstAttribute="leading" secondItem="40C-ay-3jX" secondAttribute="leading" id="NUF-S5-3Oq"/>
-                            <constraint firstItem="QAg-8y-V3b" firstAttribute="top" secondItem="RN9-0e-4VJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Of8-Q9-SQo"/>
-                            <constraint firstAttribute="trailing" secondItem="RN9-0e-4VJ" secondAttribute="trailing" id="QvR-qv-iu3"/>
-                            <constraint firstItem="RN9-0e-4VJ" firstAttribute="leading" secondItem="r5R-fW-OZT" secondAttribute="leading" id="ULy-5t-ild"/>
-                            <constraint firstItem="jgn-gl-jY8" firstAttribute="trailing" secondItem="40C-ay-3jX" secondAttribute="trailing" id="WtT-P8-PH9"/>
-                            <constraint firstAttribute="bottom" secondItem="40C-ay-3jX" secondAttribute="bottom" constant="20" symbolic="YES" id="ogC-rB-Vwj"/>
-                            <constraint firstItem="40C-ay-3jX" firstAttribute="top" secondItem="jgn-gl-jY8" secondAttribute="bottom" constant="8.5" id="qsx-HP-8FJ"/>
-                            <constraint firstItem="RN9-0e-4VJ" firstAttribute="centerX" secondItem="QAg-8y-V3b" secondAttribute="centerX" id="yI6-84-NlD"/>
-                            <constraint firstItem="QAg-8y-V3b" firstAttribute="leading" secondItem="jgn-gl-jY8" secondAttribute="leading" id="zif-Rd-FVk"/>
+                            <constraint firstItem="QAg-8y-V3b" firstAttribute="leading" secondItem="r5R-fW-OZT" secondAttribute="leadingMargin" id="Bhf-MS-czn"/>
+                            <constraint firstItem="QAg-8y-V3b" firstAttribute="top" secondItem="RN9-0e-4VJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Iaf-uX-8PS"/>
+                            <constraint firstAttribute="trailing" secondItem="RN9-0e-4VJ" secondAttribute="trailing" id="P6C-Gv-dRp"/>
+                            <constraint firstItem="RN9-0e-4VJ" firstAttribute="top" secondItem="MUy-g3-uMy" secondAttribute="top" id="QvN-lJ-wt1"/>
+                            <constraint firstItem="RN9-0e-4VJ" firstAttribute="leading" secondItem="r5R-fW-OZT" secondAttribute="leading" id="Rok-NC-nTP"/>
+                            <constraint firstAttribute="bottom" secondItem="40C-ay-3jX" secondAttribute="bottom" constant="20" symbolic="YES" id="T7x-IW-Vef"/>
+                            <constraint firstItem="QAg-8y-V3b" firstAttribute="trailing" secondItem="40C-ay-3jX" secondAttribute="trailing" id="UpC-3G-dGX"/>
+                            <constraint firstItem="RN9-0e-4VJ" firstAttribute="centerX" secondItem="QAg-8y-V3b" secondAttribute="centerX" id="hxz-Wt-ohP"/>
+                            <constraint firstItem="QAg-8y-V3b" firstAttribute="leading" secondItem="40C-ay-3jX" secondAttribute="leading" id="i5h-Bz-bmP"/>
+                            <constraint firstItem="40C-ay-3jX" firstAttribute="top" secondItem="QAg-8y-V3b" secondAttribute="bottom" constant="8" symbolic="YES" id="wPE-em-PjZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="treeType_desc" destination="40C-ay-3jX" id="7fv-eC-QcV"/>
                         <outlet property="treeType_image" destination="RN9-0e-4VJ" id="shf-zu-K5y"/>
-                        <outlet property="treeType_price" destination="jgn-gl-jY8" id="CcB-CH-yW8"/>
                         <outlet property="treeType_title" destination="QAg-8y-V3b" id="ZH1-mz-SZc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMh-rg-G3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3586.875" y="-136.26760563380282"/>
+            <point key="canvasLocation" x="3587" y="-137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kVb-qj-lnn"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="boba logo" width="1000" height="831"/>
         <image name="city" width="512" height="512"/>

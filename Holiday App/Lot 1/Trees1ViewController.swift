@@ -12,17 +12,14 @@ class Trees1ViewController: UIViewController {
     
     @IBOutlet weak var treeType_image: UIImageView!
     @IBOutlet weak var treeType_title: UILabel!
-    @IBOutlet weak var treeType_price: UILabel!
     @IBOutlet weak var treeType_desc: UILabel!
     
 
     var localIndex = Int()
+    var localTreeName = String()
     
     let treeType_titles =
         ["Silvertip Fir", "Douglas Fir", "Nordmannn Fir", "Noble Fir", "Grand Fir", "Fraser Fir"]
-
-    let treeType_prices =
-        ["$30 - $50", "$30 - $50", "$30 - $50", "$30 - $50", "$30 - $50", "$30 - $50"]
 
     let treeType_descriptions =
         ["Description 1 and whaterver else you want here so I dont know",
@@ -32,8 +29,6 @@ class Trees1ViewController: UIViewController {
          "Description 2 and what you want to make and I will make",
          "Description 2 and what you want to make and I will make"]
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,8 +36,7 @@ class Trees1ViewController: UIViewController {
         
        
         
-        treeType_title.text = treeType_titles[localIndex]
-        treeType_price.text = treeType_prices[localIndex]
+        treeType_title.text = localTreeName
         treeType_desc.text = treeType_descriptions[localIndex]
         
     }

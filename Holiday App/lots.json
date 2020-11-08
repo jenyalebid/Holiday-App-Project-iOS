@@ -10,14 +10,14 @@
         "lotID" : 1,
         "lotName" : "Pumpkin City Christmas Trees",
         "lotTreeTypes" : [1, 2, 3, 5],
-        "lotLatCoord" : 38.242910,
-        "lotLongCoord" : -122.631610
+        "lotLatCoord" : 33.610600,
+        "lotLongCoord" : -117.703460
     },
     {
         "lotID" : 2,
         "lotName" : "English Gardens",
         "lotTreeTypes" : [1, 2, 3, 5],
-        "lotLatCoord" : 38.242910,
-        "lotLongCoord" : -122.631610
+        "lotLatCoord" : 42.544320,
+        "lotLongCoord" : -83.362350
     },
 ]

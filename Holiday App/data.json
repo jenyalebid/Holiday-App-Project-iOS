@@ -3,42 +3,42 @@
         "treeID" : 0,
         "treeName" : "Silvertip Fir",
         "treeFrontImg" : "silvertip.png",
-        "treeBackImg" : "silvertipBack.png",
-        "treeDesc" : "This is so good of a description."
+        "treeBackImg" : "silvertipBack.jpg",
+        "treeDesc" : "The most sought-after Christmas tree, as their naturally beautiful silver tips and mountain fragrance is an inviting experience for a home. Shaped with sturdy, layered branches for many ornaments with the needles having a green/blueish tint with silver tips."
     },
     {
         "treeID" : 1,
         "treeName" : "Douglas Fir",
         "treeFrontImg" : "douglas.png",
-        "treeBackImg" : "douglasBack.png",
-        "treeDesc" : "This is so good of a description."
+        "treeBackImg" : "douglasBack.jpg",
+        "treeDesc" : "Actually not a true fir tree and is sometimes referred to as Douglas Tree or Oregon pine. Because this tree responded so well to shearing and a farm environment it became a very popular Christmas tree since the 1920’s. The Douglas is frequently referred to as the “old fashion tree”. The needles are a feathery dark green, soft to the touch and have a sweet fresh fragrance. The tree is dense with a conical shape."
     },
     {
         "treeID" : 2,
         "treeName" : "Nordmann Fir",
         "treeFrontImg" : "nordmann.png",
-        "treeBackImg" : "nordmannBack.png",
-        "treeDesc" : "This is so good of a description."
+        "treeBackImg" : "nordmannBack.jpg",
+        "treeDesc" : "The most popular tree in Europe and is commonly grown in Germany and Norway. The Nordmann is gaining popularity in the U.S. because of its outstanding symmetrical form and relatively open branch structure with distinct whorls. The Nordmann is sheared and cultured in the U.S. which changes the natural characteristics of the tree. The needles are short, dark green that lay flat on the branch with a deep green silvery underside that is soft to the touch. It is considered a tree with long lasting qualities with minimal needle drop; although it does need to be displayed in water."
     },
     {
         "treeID" : 3,
         "treeName" : "Noble Fir",
         "treeFrontImg" : "noble.png",
-        "treeBackImg" : "nobleBack.png",
-        "treeDesc" : "This is so good of a description."
+        "treeBackImg" : "nobleBack.jpg",
+        "treeDesc" : "One of the most important conifer species used for production of high-quality Christmas trees in the Pacific Northwest. The Noble fir is native to the Pacific Northwest where it is grown extensively in the higher elevations of Oregon and Washington states. The Noble Fir does very well in extreme conditions in both warm and cold environments and has a beautiful spruce like appearance with evenly spaced strong branches."
     },
     {
         "treeID" : 4,
         "treeName" : "Grand Fir",
         "treeFrontImg" : "grand.png",
-        "treeBackImg" : "grandBack.png",
-        "treeDesc" : "This is so good of a description."
+        "treeBackImg" : "grandBack.jpg",
+        "treeDesc" : "Distinguished from other Pacific Northwest firs by its sprays of lustrous needles that are in two distinct rows. The needles are 1 to 1 ½ inches long with glossy dark green top and white on the underside. The symmetry, dark glossy color, and strong citrus fragrance make the Grand Fir one of the preferred species of Christmas Trees in the Northwest."
     },
     {
         "treeID" : 5,
         "treeName" : "Fraser Fir",
         "treeFrontImg" : "fraser.png",
-        "treeBackImg" : "fraserBack.png",
-        "treeDesc" : "This is so good of a description."
+        "treeBackImg" : "fraserBack.jpg",
+        "treeDesc" : "Native of the Blue Ridge Mountains in North Carolina. There are some trees in production on the west coast where it is becoming popular because of its narrow pyramid shape, strong slightly upturned branches which gives this tree a compact appearance. It has a wonderful citrus odor and is said to have the best needle retention of all the trees. The Fraser Fir has been used more times in the Blue Room at the White House than any other tree species."
     },
 ]

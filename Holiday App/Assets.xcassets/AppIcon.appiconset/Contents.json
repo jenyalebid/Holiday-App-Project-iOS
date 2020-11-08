@@ -31,13 +31,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "icon1X.png",
+      "filename" : "newIcon120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "icon2X.png",
+      "filename" : "newIcon180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -88,7 +88,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "icon.png",
+      "filename" : "Holiday App Icon AppStore.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

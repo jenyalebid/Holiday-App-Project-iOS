@@ -20,22 +20,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        var vc: UIViewController
 //
 //
-//        if (UserDefaults.standard.value(forKey: "lot1") as? String) == nil {
+//        if (UserDefaults.standard.value(forKey: "lotNum") as? Int) == nil {
 //
 //            // show stuff
-//            vc = storyboard.instantiateViewController(withIdentifier: "City1ViewController")
+//            print("Initial")
+//            vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
 //        }
 //        else {
 //
 //            //stuff
+//            print("default")
 //            vc = storyboard.instantiateInitialViewController()!
 //        }
-//
-//        self.window?.rootViewController = vc
-//        self.window?.makeKeyAndVisible()
+//        
+//        self.window!.rootViewController = vc
+//        self.window!.makeKeyAndVisible()
+        
+        
         
         return true
     }
+    
 
     // MARK: UISceneSession Lifecycle
 

@@ -1,29 +1,25 @@
 //
-//  AboutVC.swift
+//  OfferViewController.swift
 //  Holiday App
 //
-//  Created by Jenya Lebid on 11/5/20.
+//  Created by Jenya Lebid on 11/7/20.
 //
 
 import UIKit
 
-class AboutVC: UIViewController {
-    
-    @IBOutlet weak var websiteButton: UIButton!
-    @IBOutlet weak var privacyButton: UIButton!
-    
-    @IBOutlet weak var lab: UILabel!
-    
-    @IBAction func website_click(_ sender: UIButton) {
-        
-        UserDefaults.standard.set("Bey Bob" as String, forKey: "button")
-    }
+class OfferViewController: UIViewController {
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*

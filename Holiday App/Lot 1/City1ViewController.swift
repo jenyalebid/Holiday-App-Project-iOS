@@ -8,22 +8,24 @@
 import UIKit
 import MapKit
 
-var treeName = String()
+
+
 let tree_struct = DataLoader().treeData
 let lot_struct = DataLoader().lotData
 
 
 class City1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    lazy var current_lot = Int()
+   
+    
+    var treeIDSend = Int()
+    var current_lot = UserDefaults.standard.value(forKey: "lotName") as! Int
     //var trees = [Int]()
     
     
     init() {
         
         //self.current_lot = current_lot
-        
-        
         //self.current_lot = current_lot
         
 
@@ -33,9 +35,6 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
     }
-    
-    
-    
     
 
     @IBOutlet weak var treesCollectionView: UICollectionView!
@@ -53,91 +52,30 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var directionsButton: UIButton!
     @IBAction func directions(_ sender: Any) {
         
-        let latt:CLLocationDegrees = -123.279484
-        let log:CLLocationDegrees = 44.563715
+        let latitude: CLLocationDegrees = lot_struct[current_lot].lotLatCoord
+        let longitude: CLLocationDegrees = lot_struct[current_lot].lotLongCoord
         
-        //let regionDist:CLLocationDistance = 1000;
-        let coord = CLLocationCoordinate2D(latitude: latt, longitude: log)
-        
-        let placeMark = MKPlacemark(coordinate: coord)
-        let mapItem = MKMapItem(placemark: placeMark)
-        mapItem.openInMaps()
+        let regionDistance:CLLocationDistance = 600
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = lot_struct[current_lot].lotName
+        mapItem.openInMaps(launchOptions: options)
     }
     
+    @IBOutlet weak var offerImg: UIImageView!
     
-    // Trees information array
-    
-    
-//    var lot1_trees = [""]
-//    var lot2_trees = [""]
-//    var lot3_tress = [""]
-//
-//    init(lot1_trees: [String], lot2_trees: [String], lot3_tress: [String]) {
-//
-//        self.lot1_trees = lot1_trees
-//        self.lot2_trees = lot2_trees
-//        self.lot3_tress = lot3_tress
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-    
-//    struct Trees {
-//
-//        var treeImg = UIImage()
-//        var treeName = String()
-//        var treeDesc = String()
-//    }
-//
-//    let silvertip = Trees(), douglas = Trees(), nordmann = Trees(), grand = Trees(), fraiser = Trees()
-//
-//
-//    func treesList() -> [Int]{
-//
-//        var tree_array = [[Int]]()
-//        var trees = [Int]()
-//
-//
-//        let lot1_trees = [0, 1, 2, 3, 4, 5]
-//        let lot2_trees = [1, 2, 3, 5]
-//        let lot3_trees = [1, 2, 3, 5]
-//
-//        tree_array.append(lot1_trees)
-//        tree_array.append(lot2_trees)
-//        tree_array.append(lot3_trees)
-//
-//        trees = tree_array[current_lot]
-//
-//        return trees
-//    }
-    
-//    func treesList() -> [String]{
-//
-//        var tree_array = [[String]]()
-//        var trees = [String]()
-//
-//         let lot1_trees = ["Silvertip Fir", "Douglas Fir", "Nordmann Fir", "Noble Fir", "Grand Fir", "Fraser Fir"]
-//         let lot2_trees = ["Noble Fir", "Douglas Fir", "Frazier Fir", "Nordmann Fir"]
-//         let lot3_trees = ["Noble Fir", "Douglas Fir", "Frazier Fir", "Nordmann Fir"]
-//
-//
-//        tree_array.append(lot1_trees)
-//        tree_array.append(lot2_trees)
-//        tree_array.append(lot3_trees)
-//
-//        trees = tree_array[current_lot]
-//
-//        return trees
-//    }
-    
-
-    let treeImg: [UIImage] =
-        [UIImage(named: "silvertip.png")!, UIImage(named: "douglas.png")!, UIImage(named: "nordmann.png")!, UIImage(named: "noble.png")!, UIImage(named: "grand.png")!, UIImage(named: "fraser.png")!]
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        print("USER DEF", UserDefaults.standard.value(forKey: "lotName")!)
         
         treesCollectionView.delegate = self
         treesCollectionView.dataSource = self
@@ -148,9 +86,12 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         //trees_visual.clipsToBounds = true
         trees_visual.layer.cornerRadius = 10.0
         trees_box.layer.cornerRadius = 10.0
+        map_box.layer.cornerRadius = 10.0
         
         directionsButton.layer.cornerRadius = 10.0
         //directionsButton.layer.borderWidth = 2.0
+        
+
         
         lot_name.text = lot_struct[current_lot].lotName
         
@@ -184,9 +125,11 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         //print("Trees ARRAY ", trees)
         
         let trees = lot_struct[current_lot].lotTreeTypes
+        let cellImg = UIImage(named: tree_struct[trees[indexPath.item]].treeFrontImg)
         
+        cell.treeTypeImage.image = cellImg
         cell.treeTypeLabel.text = tree_struct[trees[indexPath.item]].treeName
-        cell.treeTypeImage.image = treeImg[trees[indexPath.item]]
+        
         cell.treeTypeImage.layer.cornerRadius = 10.0
         
         return cell
@@ -202,7 +145,7 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         let trees = lot_struct[current_lot].lotTreeTypes
         
-        treeName = tree_struct[trees[indexPath.item]].treeName
+        treeIDSend = tree_struct[trees[indexPath.item]].treeID
         //treeName = tree_struct[indexPath.item].treeName
         
         performSegue(withIdentifier: "tree_seg", sender: self)
@@ -210,7 +153,7 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.destination is Events1ViewController {
+        if segue.destination is OfferViewController {
             
             // stuff going on here
             
@@ -223,16 +166,12 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         if segue.destination is Trees1ViewController {
             
             let vc = segue.destination as? Trees1ViewController
-            vc?.localTreeName = treeName
+            vc?.localIndex = treeIDSend
             
             //print("In trees prepare")
         }
     }
 }
-
-
-
-
 
 // interactive map info
 private extension MKMapView {

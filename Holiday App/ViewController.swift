@@ -19,42 +19,44 @@ class ViewController: UIViewController {
     @IBOutlet weak var city3: UIButton!
     
 
+    @IBOutlet weak var westBloom: UIImageView!
+    @IBOutlet weak var petaluma: UIImageView!
+    @IBOutlet weak var laguna: UIImageView!
     
+
     @IBAction func city1(_ sender: UIButton) {
-        
-        UserDefaults.standard.set("lot1" as String, forKey: "lot1")
         
         lot = 0
         
+        UserDefaults.standard.set(lot as Int, forKey: "lotName")
+        print(UserDefaults.standard.value(forKey: "lotName")!)
         performSegue(withIdentifier: "lot_seg", sender: self)
     }
     
     @IBAction func city2(_ sender: UIButton) {
         
-        UserDefaults.standard.set("lot2" as String, forKey: "lot2")
-        
         lot = 1
         
+        UserDefaults.standard.set(lot as Int, forKey: "lotName")
         performSegue(withIdentifier: "lot_seg", sender: self)
     }
     
     @IBAction func city3(_ sender: UIButton) {
         
-        UserDefaults.standard.set("lot3" as String, forKey: "lot3")
-        
         lot = 2
         
+        UserDefaults.standard.set(lot as Int, forKey: "lotName")
         performSegue(withIdentifier: "lot_seg", sender: self)
     }
     
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let vc = segue.destination as! City1ViewController
-        vc.current_lot = self.lot
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        let vc = segue.destination as! City1ViewController
+//        vc.current_lot = self.lot
+//
+//    }
     
     
     
@@ -64,6 +66,10 @@ class ViewController: UIViewController {
         //city_box_vis.clipsToBounds = true
         city_box_vis.layer.cornerRadius = 10.0
         city_select_box.layer.cornerRadius = 10.0
+        
+        westBloom.layer.cornerRadius = 10.0
+        petaluma.layer.cornerRadius = 10.0
+        laguna.layer.cornerRadius = 10.0
         //city_select_box.layer.borderWidth = 2.0
         //city_select_box.layer.borderColor =
         //let darkBlur = UIBlurEffect(style: .dark)

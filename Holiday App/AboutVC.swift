@@ -16,8 +16,18 @@ class AboutVC: UIViewController {
     
     @IBAction func website_click(_ sender: UIButton) {
         
-        UserDefaults.standard.set("Bey Bob" as String, forKey: "button")
+        if let url = URL(string: "http://www.theholidayapp.com") {
+            UIApplication.shared.open(url)
+        }
     }
+    @IBAction func privacy_click(_ sender: UIButton) {
+        
+        if let url = URL(string: "http://www.theholidayapp.com/privacy") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

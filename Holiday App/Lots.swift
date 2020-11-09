@@ -12,6 +12,8 @@ struct Lots: Codable {
     var lotID = Int()
     var lotName = String()
     var lotTreeTypes = [Int]()
+    var lotDiscount = String()
+    var lotDiscountNote = String()
     var lotLatCoord = Double()
     var lotLongCoord = Double()
 }

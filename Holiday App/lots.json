@@ -3,6 +3,8 @@
         "lotID" : 0,
         "lotName" : "Pronzini Christmas Trees",
         "lotTreeTypes" : [0, 1, 2, 3, 4, 5],
+        "lotDiscount" : "$10 Off",
+        "lotDiscountNote" : "With purchase over $69",
         "lotLatCoord" : 38.242910,
         "lotLongCoord" : -122.631610
     },
@@ -10,6 +12,8 @@
         "lotID" : 1,
         "lotName" : "Pumpkin City Christmas Trees",
         "lotTreeTypes" : [1, 2, 3, 5],
+        "lotDiscount" : "$10 Off",
+        "lotDiscountNote" : "With purchase over $69",
         "lotLatCoord" : 33.610600,
         "lotLongCoord" : -117.703460
     },
@@ -17,6 +21,8 @@
         "lotID" : 2,
         "lotName" : "English Gardens",
         "lotTreeTypes" : [1, 2, 3, 5],
+        "lotDiscount" : "$10 Off",
+        "lotDiscountNote" : "With purchase over $69",
         "lotLatCoord" : 42.544320,
         "lotLongCoord" : -83.362350
     },

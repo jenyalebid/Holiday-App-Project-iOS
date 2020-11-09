@@ -9,11 +9,19 @@ import UIKit
 
 class OfferViewController: UIViewController {
 
-
+    @IBOutlet weak var discountLabel: UILabel!
+    @IBOutlet weak var noteLabel: UILabel!
+    @IBOutlet weak var santaView: UIView!
+    @IBOutlet weak var bubbleView: UIView!
+    
+    var current_lot = UserDefaults.standard.value(forKey: "lotName") as! Int
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        discountLabel.text = lot_struct[current_lot].lotDiscount
+        noteLabel.text = lot_struct[current_lot].lotDiscountNote
         
         
         // Do any additional setup after loading the view.

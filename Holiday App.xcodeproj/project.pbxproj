@@ -10,6 +10,7 @@
 		B11B739B2557629700E98925 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B739A2557629700E98925 /* OfferViewController.swift */; };
 		B11B739E2557840C00E98925 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B739D2557840C00E98925 /* NavigationViewController.swift */; };
 		B11B74242557AC5000E98925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B74232557AC5000E98925 /* SceneDelegate.swift */; };
+		B11B744C255887BB00E98925 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B744B255887BB00E98925 /* IntroViewController.swift */; };
 		B12B436B253A8DE00082BDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B436A253A8DE00082BDCF /* AppDelegate.swift */; };
 		B12B436F253A8DE00082BDCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B436E253A8DE00082BDCF /* ViewController.swift */; };
 		B12B4372253A8DE00082BDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12B4370253A8DE00082BDCF /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		B11B739A2557629700E98925 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		B11B739D2557840C00E98925 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		B11B74232557AC5000E98925 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B11B744B255887BB00E98925 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		B12B4367253A8DE00082BDCF /* Holiday App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holiday App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12B436A253A8DE00082BDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B12B436E253A8DE00082BDCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		B12B4369253A8DE00082BDCF /* Holiday App */ = {
 			isa = PBXGroup;
 			children = (
+				B11B744B255887BB00E98925 /* IntroViewController.swift */,
 				B12B436A253A8DE00082BDCF /* AppDelegate.swift */,
 				B11B74232557AC5000E98925 /* SceneDelegate.swift */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11B739E2557840C00E98925 /* NavigationViewController.swift in Sources */,
+				B11B744C255887BB00E98925 /* IntroViewController.swift in Sources */,
 				B11B739B2557629700E98925 /* OfferViewController.swift in Sources */,
 				B1B7E75325552F7B0023A596 /* Lots.swift in Sources */,
 				B1B7E74D255526630023A596 /* DataLoader.swift in Sources */,
@@ -347,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -354,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.001;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theholidayapp.holiday-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -368,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -375,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.001;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theholidayapp.holiday-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

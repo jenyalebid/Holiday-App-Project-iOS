@@ -29,8 +29,10 @@ class ViewController: UIViewController {
         lot = 0
         
         UserDefaults.standard.set(lot as Int, forKey: "lotName")
-        print(UserDefaults.standard.value(forKey: "lotName")!)
+        //print(UserDefaults.standard.value(forKey: "lotName")!)
         performSegue(withIdentifier: "lot_seg", sender: self)
+        
+        
     }
     
     @IBAction func city2(_ sender: UIButton) {
@@ -51,6 +53,8 @@ class ViewController: UIViewController {
     
     
     
+    
+    
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //
 //        let vc = segue.destination as! City1ViewController
@@ -64,8 +68,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //city_box_vis.clipsToBounds = true
-        city_box_vis.layer.cornerRadius = 10.0
-        city_select_box.layer.cornerRadius = 10.0
+        //city_box_vis.layer.cornerRadius = 10.0
+        //city_select_box.layer.cornerRadius = 10.0
         
         westBloom.layer.cornerRadius = 10.0
         petaluma.layer.cornerRadius = 10.0

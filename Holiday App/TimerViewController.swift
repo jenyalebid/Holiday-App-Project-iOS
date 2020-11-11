@@ -12,7 +12,24 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var minutesLabel: UILabel!
     @IBOutlet weak var secondsLabel: UILabel!
+    @IBOutlet weak var shareView: UIView!
     
+    @IBAction func counterShare(_ sender: Any) {
+        
+        UIGraphicsBeginImageContext(shareView.bounds.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else {
+            
+            return
+        }
+        
+        let share = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        
+
+        
+        present(share, animated: true, completion: nil)
+    }
     
     var timer: Timer!
         

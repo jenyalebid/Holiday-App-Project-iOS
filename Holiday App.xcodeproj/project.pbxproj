@@ -25,6 +25,11 @@
 		B1B7E75325552F7B0023A596 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E75225552F7B0023A596 /* Lots.swift */; };
 		B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */; };
 		B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */; };
+		B1D6DD3A255A720100C283B8 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD39255A720100C283B8 /* TimerViewController.swift */; };
+		B1D6DD47255B268000C283B8 /* taskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD46255B268000C283B8 /* taskStore.swift */; };
+		B1D6DD4B255B28E100C283B8 /* wishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD4A255B28E100C283B8 /* wishList.swift */; };
+		B1D6DD4F255B295900C283B8 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD4E255B295900C283B8 /* WishListViewController.swift */; };
+		B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD59255B3E3000C283B8 /* WishTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		B1B7E75225552F7B0023A596 /* Lots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1CollectionViewCell.swift; sourceTree = "<group>"; };
 		B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1ViewController.swift; sourceTree = "<group>"; };
+		B1D6DD39255A720100C283B8 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B1D6DD46255B268000C283B8 /* taskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskStore.swift; sourceTree = "<group>"; };
+		B1D6DD4A255B28E100C283B8 /* wishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishList.swift; sourceTree = "<group>"; };
+		B1D6DD4E255B295900C283B8 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
+		B1D6DD59255B3E3000C283B8 /* WishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +94,14 @@
 				B12B436A253A8DE00082BDCF /* AppDelegate.swift */,
 				B11B74232557AC5000E98925 /* SceneDelegate.swift */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
+				B1D6DD59255B3E3000C283B8 /* WishTableViewCell.swift */,
+				B1D6DD4E255B295900C283B8 /* WishListViewController.swift */,
+				B1D6DD46255B268000C283B8 /* taskStore.swift */,
+				B1D6DD39255A720100C283B8 /* TimerViewController.swift */,
 				B11B739D2557840C00E98925 /* NavigationViewController.swift */,
 				B11B739A2557629700E98925 /* OfferViewController.swift */,
 				B1579CDB2554922B002F4299 /* AboutVC.swift */,
+				B1D6DD4A255B28E100C283B8 /* wishList.swift */,
 				B12B436E253A8DE00082BDCF /* ViewController.swift */,
 				B1B7E74C255526630023A596 /* DataLoader.swift */,
 				B1B7E74925551DAB0023A596 /* Trees.swift */,
@@ -183,18 +198,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */,
 				B11B739E2557840C00E98925 /* NavigationViewController.swift in Sources */,
 				B11B744C255887BB00E98925 /* IntroViewController.swift in Sources */,
 				B11B739B2557629700E98925 /* OfferViewController.swift in Sources */,
+				B1D6DD4F255B295900C283B8 /* WishListViewController.swift in Sources */,
 				B1B7E75325552F7B0023A596 /* Lots.swift in Sources */,
 				B1B7E74D255526630023A596 /* DataLoader.swift in Sources */,
 				B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */,
 				B12B436F253A8DE00082BDCF /* ViewController.swift in Sources */,
 				B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */,
 				B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */,
+				B1D6DD47255B268000C283B8 /* taskStore.swift in Sources */,
 				B11B74242557AC5000E98925 /* SceneDelegate.swift in Sources */,
+				B1D6DD3A255A720100C283B8 /* TimerViewController.swift in Sources */,
 				B12B436B253A8DE00082BDCF /* AppDelegate.swift in Sources */,
 				B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */,
+				B1D6DD4B255B28E100C283B8 /* wishList.swift in Sources */,
 				B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -373,7 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

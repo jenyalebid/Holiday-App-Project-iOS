@@ -37,7 +37,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             //stuff
             print("default")
-            vcIdentifier = "City1ViewController"
+            vcIdentifier = "tabController"
         }
         
         window?.rootViewController = storyBoard.instantiateViewController(withIdentifier: vcIdentifier)

@@ -35,7 +35,7 @@ class TimerViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
+        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
     }
     
     @objc func UpdateTime() {

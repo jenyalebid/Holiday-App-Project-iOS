@@ -27,17 +27,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         var vcIdentifier = String()
         
         
-        if (UserDefaults.standard.value(forKey: "lotName") as? Int) == nil {
+        if (UserDefaults.standard.value(forKey: "lotName") as? Int) != nil && (UserDefaults.standard.value(forKey: "lotName") as? Int) != 3 {
 
             // show stuff
             print("Initial")
-            vcIdentifier = "ViewController"
+            
+            vcIdentifier = "tabController"
+        }
+        else if (UserDefaults.standard.value(forKey: "lotName") as? Int) == 3 {
+            
+            vcIdentifier = "nonCityTabController"
         }
         else {
 
             //stuff
             print("default")
-            vcIdentifier = "tabController"
+            vcIdentifier = "ViewController"
         }
         
         window?.rootViewController = storyBoard.instantiateViewController(withIdentifier: vcIdentifier)

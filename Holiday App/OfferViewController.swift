@@ -13,6 +13,8 @@ class OfferViewController: UIViewController {
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var santaView: UIView!
     @IBOutlet weak var bubbleView: UIView!
+    @IBOutlet weak var disclamerLabel: UILabel!
+    @IBOutlet weak var showToLabel: UILabel!
     
     var current_lot = UserDefaults.standard.value(forKey: "lotName") as! Int
     
@@ -20,8 +22,10 @@ class OfferViewController: UIViewController {
         super.viewDidLoad()
 
         
+        showToLabel.text = lot_struct[current_lot].lotDiscountShow
         discountLabel.text = lot_struct[current_lot].lotDiscount
         noteLabel.text = lot_struct[current_lot].lotDiscountNote
+        disclamerLabel.text = lot_struct[current_lot].lotDisclamerNote
         
         
         // Do any additional setup after loading the view.

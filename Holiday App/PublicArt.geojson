@@ -1,0 +1,180 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lester McCoy Pavilion",
+        "latitude": "21.290824",
+        "description": "One of a pair of murals at the Lester McCoy Pavilion at Ala Mona Regional Park. A Works Progress Administration art project, done in the Art Deco style. It depicts various aspects of makahiki (harvest festival), imagined as taking place in the vicinity of what is now know as Ala Mona Park, makahiki pa'ani ho'oikaika (annual sports tournaments) are emphasized. This mural shows ali'i (chiefs) guided by the spirit of Lono (one of the four major Hawaiian gods, associated with peace and fertility) being presented with ho'okupu (tribute). In the distance kahuna (priests) guard the kapa (bark cloth) double banner of Lono. In the background are the silhouette of Lae'ahi (Diamond Head) and the village of Waikiki (spouting water). Sports represented are he'e holua (sled racing), mokomoko (hand-to-hand fighting), and 'ulu maika (bowling), dance and music are represented with 'uli'uli (gourd rattle), pahu (drum), and mahiole (helmet).",
+        "thumb": null,
+        "credit": "Funded by the Works Progress Administration",
+        "objectid": "1930.01.01",
+        "creator": "Robert Lee Eskridge",
+        "longitude": "-157.85131",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/001/19300101.JPG",
+        "date": "1935",
+        "discipline": "Mural",
+        "title": "The Makahiki Festival - The Makai Mural",
+        "access": "Limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.85131,
+          21.290824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kuhio Beach",
+        "latitude": "21.273389",
+        "description": "Bronze figure of Prince Jonah Kuhio Kalanianaole. Located at Kuhio Beach.",
+        "thumb": null,
+        "credit": "City and County of Honolulu Purchase",
+        "objectid": "2001.05",
+        "creator": "Sean Browne",
+        "longitude": "-157.823802",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/003/002_200105.JPG",
+        "date": "2001",
+        "discipline": "Sculpture",
+        "title": "Prince Jonah Kuhio Kalanianaole",
+        "access": "Full"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.823802,
+          21.273389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lester McCoy Pavilion",
+        "latitude": "21.290959",
+        "description": "One of a pair of murals at the Lester McCoy Pavilion at Ala Mona Regional Park. A Works Progress Administration art project, done in the Art Deco style. It depicts various aspects of makahiki (harvest festival), imagined as taking place in the vicinity of what is now know as Ala Mona Park, makahiki pa'ani ho'oikaika (annual sports tournaments) are emphasized. This mural depicts ali'i with their retainers traveling between villages by wa'a kaulua (double hulled canoe), a carving of Lono and kahili (feather standards) accompany them. Puowaina (Punchbowl) is shown in the background. Also depicted is he'e nalu (surfing) on olo (long surfboard) and 'o'o ihe (sport of spear throwing) whereby a group of men, at a given signal, hurl their spears at one man who would either catch the spears, dodge them, or otherwise fend them off.",
+        "thumb": null,
+        "credit": "Funded by the Works Progress Administration",
+        "objectid": "1930.01.02",
+        "creator": "Robert Lee Eskridge",
+        "longitude": "-157.851265",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/001/19300102.JPG",
+        "date": "1935",
+        "discipline": "Mural",
+        "title": "The Makahiki Festival - The Mauka Mural",
+        "access": "Limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.851265,
+          21.290959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Honolulu Fire Department Central Station",
+        "latitude": "21.311151",
+        "description": "Three sets of double doors and three top panels of an aluminium alloy in the Art Deco style. Located at the Honolulu Fire Department Central Station.",
+        "thumb": null,
+        "credit": null,
+        "objectid": "1935.01",
+        "creator": "Charles Dickey",
+        "longitude": "-157.859057",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/001/193501.JPG",
+        "date": "1935",
+        "discipline": "Door",
+        "title": "Central Fire Department Doors",
+        "access": "Full"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.859057,
+          21.311151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Diamond Head Lookout/Kuilei Beach Cliffs",
+        "latitude": "21.256139",
+        "description": "A cast bronze commemorative plaque set into a monolith. The plaque memorializes Amelia Earhart's first flight to Hawaii in 1935. Located at the Diamond Head Lookout.",
+        "thumb": null,
+        "credit": "Gift of the Amelia Earhart Memorial Committee",
+        "objectid": "1937.01",
+        "creator": "Kate Kelly",
+        "longitude": "-157.804769",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/001/193701.JPG",
+        "date": "1935",
+        "discipline": "Plaque",
+        "title": "Amelia Earhart Memorial Plaque",
+        "access": "Full"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.804769,
+          21.256139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Board of Water Supply Engineering Building Entrance",
+        "latitude": "21.306108",
+        "description": "The stone bas relief entry way to the 1939 Board of Water Supply building. The bas relief is executed on a series of green steatite stone blocks which depict mythical and human Hawaiian figures, flora, and animals in the upper portions flanking either side of a central doorway as well as stylized letter forming a narrative text beneath the figurative panels. The two panels, one on the Diamond Head side of the entry way and the other on the other side of the entry door both depict stories involving the god Kane and Kaneloa in a mythical story about the discovery and use of water. Located at the Board of Water Supply Engineering Building Entrance.",
+        "thumb": null,
+        "credit": "Funded by the Works Progress Administration",
+        "objectid": "1939.01",
+        "creator": "Marguerite Louis Blasingame",
+        "longitude": "-157.852555",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/001/193901-5.JPG",
+        "date": "1939",
+        "discipline": "Mural",
+        "title": "Ka Wai Ake Akua",
+        "access": "Full"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.852555,
+          21.306108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Board of Water Supply Building Lobby",
+        "latitude": "21.306008",
+        "description": "A mural depicting various agricultural activities occurring in Hawaii over several time periods, from pre-contact to the 20th century. Located in the Board of Water Supply Building Lobby.",
+        "thumb": null,
+        "credit": null,
+        "objectid": "1958.01",
+        "creator": "Juliette May Fraser",
+        "longitude": "-157.853896",
+        "imagefile": "http://hiculturearts.pastperfect-online.com/34250images/001/195801.JPG",
+        "date": "1958",
+        "discipline": "Mural",
+        "title": "Pure Water - Man's Greatest Need",
+        "access": "Limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.853896,
+          21.306008
+        ]
+      }
+    }
+  ]
+}

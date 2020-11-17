@@ -46,6 +46,26 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var location_map: MKMapView!
     
     @IBOutlet weak var lot_name: UILabel!
+    @IBOutlet weak var lot_logo: UIImageView!
+    
+    @IBAction func websiteClick(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func twitterClick(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func facebookClick(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
+    
     
     // Directions button redirect
     
@@ -88,12 +108,21 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         trees_box.layer.cornerRadius = 10.0
         map_box.layer.cornerRadius = 10.0
         
+        
         directionsButton.layer.cornerRadius = 10.0
         //directionsButton.layer.borderWidth = 2.0
         
-
+        //print(lot_struct[current_lot].lotLogo != "")
+        if lot_struct[current_lot].lotLogo != "" {
+            
+            lot_logo.image = UIImage(named: lot_struct[current_lot].lotLogo)
+        }
+        else {
+            
+            lot_name.text = lot_struct[current_lot].lotName
+        }
         
-        lot_name.text = lot_struct[current_lot].lotName
+        
         
         
         

@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var westBloom: UIImageView!
     @IBOutlet weak var petaluma: UIImageView!
     @IBOutlet weak var laguna: UIImageView!
+    @IBOutlet weak var notInCity: UIButton!
     
 
     @IBAction func city1(_ sender: UIButton) {
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         lot = 0
         
         UserDefaults.standard.set(lot as Int, forKey: "lotName")
-        //print(UserDefaults.standard.value(forKey: "lotName")!)
+        print(UserDefaults.standard.value(forKey: "lotName")!)
         performSegue(withIdentifier: "lot_seg", sender: self)
         
         
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         lot = 1
         
         UserDefaults.standard.set(lot as Int, forKey: "lotName")
+        print(UserDefaults.standard.value(forKey: "lotName")!)
         performSegue(withIdentifier: "lot_seg", sender: self)
     }
     
@@ -48,8 +50,18 @@ class ViewController: UIViewController {
         lot = 2
         
         UserDefaults.standard.set(lot as Int, forKey: "lotName")
+        print(UserDefaults.standard.value(forKey: "lotName")!)
         performSegue(withIdentifier: "lot_seg", sender: self)
     }
+    
+    @IBAction func notCity(_ sender: Any) {
+        
+        lot = 3
+        UserDefaults.standard.set(lot as Int, forKey: "lotName")
+        print(UserDefaults.standard.value(forKey: "lotName")!)
+        performSegue(withIdentifier: "noCity_seg", sender: self)
+    }
+    
     
     
     
@@ -73,6 +85,7 @@ class ViewController: UIViewController {
         westBloom.layer.cornerRadius = 10.0
         petaluma.layer.cornerRadius = 10.0
         laguna.layer.cornerRadius = 10.0
+        notInCity.layer.cornerRadius = 10.0
         //city_select_box.layer.borderWidth = 2.0
         //city_select_box.layer.borderColor =
         //let darkBlur = UIBlurEffect(style: .dark)

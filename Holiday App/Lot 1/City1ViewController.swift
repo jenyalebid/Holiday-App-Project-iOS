@@ -50,17 +50,24 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     @IBAction func websiteClick(_ sender: Any) {
         
-        
+        if let url = URL(string: lot_struct[current_lot].lotWebsite) {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func twitterClick(_ sender: Any) {
         
+        if let url = URL(string: lot_struct[current_lot].lotTwitter) {
+            UIApplication.shared.open(url)
+        }
         
     }
     
     @IBAction func facebookClick(_ sender: Any) {
         
-        
+        if let url = URL(string: lot_struct[current_lot].lotFacebook) {
+            UIApplication.shared.open(url)
+        }
     }
     
     

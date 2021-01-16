@@ -41,4 +41,11 @@
         "treeBackImg" : "fraserBack.jpg",
         "treeDesc" : "Native of the Blue Ridge Mountains in North Carolina. There are some trees in production on the west coast where it is becoming popular because of its narrow pyramid shape, strong slightly upturned branches which gives this tree a compact appearance. It has a wonderful citrus odor and is said to have the best needle retention of all the trees. The Fraser Fir has been used more times in the Blue Room at the White House than any other tree species."
     },
+    {
+        "treeID" : 6,
+        "treeName" : "Balsam Fir",
+        "treeFrontImg" : "balsalmFront.png",
+        "treeBackImg" : "balsamBack.jpg",
+        "treeDesc" : "Balsam fir has been a traditional Christmas tree choice for generations.  Its popularity may be based on its strong Christmas tree scent; it is among the most fragrant of all species of Christmas trees.  Balsam fir has relatively short, dark green needles and excellent form making it a good choice for displaying ornaments. Typically grown in Canada, New England, the upper Great Lakes and Pennsylvania; Balsam fir can be found at choose and cut farms in these areas and is also frequently stocked at most types of retail locations east of the Rockies."
+    },
 ]

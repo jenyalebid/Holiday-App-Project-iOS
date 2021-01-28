@@ -22,10 +22,8 @@
 		B1706CC725C0B94E002A138C /* tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CC625C0B94D002A138C /* tree.usdz */; };
 		B1706CCC25C0E11A002A138C /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CCB25C0E11A002A138C /* toy_drummer.usdz */; };
 		B1706CCF25C0E2FB002A138C /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706CCE25C0E2FB002A138C /* model.swift */; };
-		B1706CF725C22EE4002A138C /* NewARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706CF625C22EE4002A138C /* NewARView.swift */; };
-		B1706D2925C23A3F002A138C /* TreeScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B1706D2825C23A3F002A138C /* TreeScene.rcproject */; };
 		B1706D3225C24091002A138C /* ARViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3125C24091002A138C /* ARViewC.swift */; };
-		B1706D3525C24098002A138C /* Exp.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3425C24098002A138C /* Exp.rcproject */; };
+		B1706D3525C24098002A138C /* TreeScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3425C24098002A138C /* TreeScene.rcproject */; };
 		B19134D225BB679800B543D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B19134D125BB679800B543D6 /* GoogleService-Info.plist */; };
 		B1B7E74325551A6C0023A596 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B7E74225551A6C0023A596 /* data.json */; };
 		B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E74925551DAB0023A596 /* Trees.swift */; };
@@ -39,6 +37,8 @@
 		B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD59255B3E3000C283B8 /* WishTableViewCell.swift */; };
 		B1ED2B97256306E100EC1291 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED2B96256306E100EC1291 /* MapViewController.swift */; };
 		B1ED2B9B25630F1400EC1291 /* TreeLotsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED2B9A25630F1400EC1291 /* TreeLotsMap.swift */; };
+		B1EF2D4725C27D19009CBADC /* PublicArt.geojson in Resources */ = {isa = PBXBuildFile; fileRef = B1EF2D4925C27D19009CBADC /* PublicArt.geojson */; };
+		B1EF2D4E25C292F2009CBADC /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EF2D4D25C292F2009CBADC /* PokeAnnotation.swift */; };
 		B1F6D6FA25B188DD00A5B9BB /* TreeScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = B1F6D6F925B188DD00A5B9BB /* TreeScene.scn */; };
 		B1F6D77825B18E6A00A5B9BB /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6D77725B18E6A00A5B9BB /* ARViewController.swift */; };
 		F239BD696955EB559FCE542A /* Pods_Holiday_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4376838307D39D9774677E07 /* Pods_Holiday_App.framework */; };
@@ -65,10 +65,8 @@
 		B1706CC625C0B94D002A138C /* tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree.usdz; sourceTree = "<group>"; };
 		B1706CCB25C0E11A002A138C /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		B1706CCE25C0E2FB002A138C /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
-		B1706CF625C22EE4002A138C /* NewARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewARView.swift; sourceTree = "<group>"; };
-		B1706D2825C23A3F002A138C /* TreeScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TreeScene.rcproject; sourceTree = "<group>"; };
 		B1706D3125C24091002A138C /* ARViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewC.swift; sourceTree = "<group>"; };
-		B1706D3425C24098002A138C /* Exp.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Exp.rcproject; sourceTree = "<group>"; };
+		B1706D3425C24098002A138C /* TreeScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TreeScene.rcproject; sourceTree = "<group>"; };
 		B19134D125BB679800B543D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1B7E74225551A6C0023A596 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B1B7E74925551DAB0023A596 /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
@@ -83,7 +81,8 @@
 		B1ED2B96256306E100EC1291 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B1ED2B9925630ECF00EC1291 /* TreeLotsMap.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = TreeLotsMap.geojson; sourceTree = "<group>"; };
 		B1ED2B9A25630F1400EC1291 /* TreeLotsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeLotsMap.swift; sourceTree = "<group>"; };
-		B1ED2BA32563202F00EC1291 /* PublicArt.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = PublicArt.geojson; sourceTree = "<group>"; };
+		B1EF2D4825C27D19009CBADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/PublicArt.geojson; sourceTree = "<group>"; };
+		B1EF2D4D25C292F2009CBADC /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		B1F6D6F925B188DD00A5B9BB /* TreeScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TreeScene.scn; sourceTree = "<group>"; };
 		B1F6D77725B18E6A00A5B9BB /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,9 +145,7 @@
 				B19134D125BB679800B543D6 /* GoogleService-Info.plist */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
 				B1706D3125C24091002A138C /* ARViewC.swift */,
-				B1706D3425C24098002A138C /* Exp.rcproject */,
-				B1706CF625C22EE4002A138C /* NewARView.swift */,
-				B1706D2825C23A3F002A138C /* TreeScene.rcproject */,
+				B1706D3425C24098002A138C /* TreeScene.rcproject */,
 				B1F6D77725B18E6A00A5B9BB /* ARViewController.swift */,
 				B1F6D78025B2694B00A5B9BB /* Additional */,
 				B1F6D77F25B2690300A5B9BB /* Default */,
@@ -198,8 +195,9 @@
 		B1F6D77D25B2681E00A5B9BB /* Map Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				B1ED2BA32563202F00EC1291 /* PublicArt.geojson */,
+				B1EF2D4925C27D19009CBADC /* PublicArt.geojson */,
 				B1ED2B96256306E100EC1291 /* MapViewController.swift */,
+				B1EF2D4D25C292F2009CBADC /* PokeAnnotation.swift */,
 				B1ED2B9A25630F1400EC1291 /* TreeLotsMap.swift */,
 				B1ED2B9925630ECF00EC1291 /* TreeLotsMap.geojson */,
 			);
@@ -245,6 +243,8 @@
 			dependencies = (
 			);
 			name = "Holiday App";
+			packageProductDependencies = (
+			);
 			productName = "Holiday App";
 			productReference = B12B4367253A8DE00082BDCF /* Holiday App.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +272,8 @@
 				Base,
 			);
 			mainGroup = B12B435E253A8DE00082BDCF;
+			packageReferences = (
+			);
 			productRefGroup = B12B4368253A8DE00082BDCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,6 +292,7 @@
 				B12B4374253A8DE20082BDCF /* Assets.xcassets in Resources */,
 				B1B7E75025552E040023A596 /* lots.json in Resources */,
 				B1F6D6FA25B188DD00A5B9BB /* TreeScene.scn in Resources */,
+				B1EF2D4725C27D19009CBADC /* PublicArt.geojson in Resources */,
 				B1706CCC25C0E11A002A138C /* toy_drummer.usdz in Resources */,
 				B12B4372253A8DE00082BDCF /* Main.storyboard in Resources */,
 				B1B7E74325551A6C0023A596 /* data.json in Resources */,
@@ -347,7 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1706D3525C24098002A138C /* Exp.rcproject in Sources */,
+				B1706D3525C24098002A138C /* TreeScene.rcproject in Sources */,
+				B1EF2D4E25C292F2009CBADC /* PokeAnnotation.swift in Sources */,
 				B1F6D77825B18E6A00A5B9BB /* ARViewController.swift in Sources */,
 				B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */,
 				B11B739E2557840C00E98925 /* NavigationViewController.swift in Sources */,
@@ -358,11 +362,9 @@
 				B1B7E74D255526630023A596 /* DataLoader.swift in Sources */,
 				B1ED2B97256306E100EC1291 /* MapViewController.swift in Sources */,
 				B1706D3225C24091002A138C /* ARViewC.swift in Sources */,
-				B1706D2925C23A3F002A138C /* TreeScene.rcproject in Sources */,
 				B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */,
 				B12B436F253A8DE00082BDCF /* ViewController.swift in Sources */,
 				B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */,
-				B1706CF725C22EE4002A138C /* NewARView.swift in Sources */,
 				B1706CCF25C0E2FB002A138C /* model.swift in Sources */,
 				B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */,
 				B1ED2B9B25630F1400EC1291 /* TreeLotsMap.swift in Sources */,
@@ -392,6 +394,14 @@
 				B12B4376253A8DE20082BDCF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1EF2D4925C27D19009CBADC /* PublicArt.geojson */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1EF2D4825C27D19009CBADC /* Base */,
+			);
+			name = PublicArt.geojson;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -528,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -551,7 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

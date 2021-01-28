@@ -424,7 +424,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="716" y="897"/>
+            <point key="canvasLocation" x="719" y="897"/>
         </scene>
         <!--Wish List-->
         <scene sceneID="bq3-8M-jvC">
@@ -757,9 +757,9 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N05-7E-1PM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-917" y="897"/>
+            <point key="canvasLocation" x="2599" y="-178"/>
         </scene>
-        <!--Item-->
+        <!--AR-->
         <scene sceneID="RHh-HI-siI">
             <objects>
                 <viewController id="6xp-6J-7WQ" customClass="ARViewC" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -773,41 +773,57 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXO-Gm-ma8">
                                 <rect key="frame" x="155.5" y="739" width="103" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Scale Tree"/>
+                                <state key="normal" title="Place Tree"/>
                                 <connections>
                                     <action selector="placeClick:" destination="6xp-6J-7WQ" eventType="touchUpInside" id="pCk-vN-YLr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point Camera at flat surface and move around until the tree shows, then click Scale to chance size" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxG-Ba-Jxy">
-                                <rect key="frame" x="40" y="69" width="334" height="61"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="O91-Jm-Cdb">
+                                <rect key="frame" x="334" y="119" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nJl-ms-87u" appends="YES" id="KKV-5n-67M"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JYw-w7-aRw">
+                                <rect key="frame" x="334" y="191" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iH1-ag-Zn7" appends="YES" id="ZUA-6j-Ad9"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Pj-sI-Yge"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AJ3-87-Kpf" firstAttribute="top" secondItem="TEX-49-SNg" secondAttribute="top" id="73B-BO-ck9"/>
-                            <constraint firstItem="5Pj-sI-Yge" firstAttribute="trailing" secondItem="SxG-Ba-Jxy" secondAttribute="trailing" constant="40" id="89D-Tb-1cE"/>
-                            <constraint firstItem="SxG-Ba-Jxy" firstAttribute="top" secondItem="5Pj-sI-Yge" secondAttribute="top" constant="25" id="8AM-O8-8xh"/>
                             <constraint firstItem="AJ3-87-Kpf" firstAttribute="leading" secondItem="5Pj-sI-Yge" secondAttribute="leading" id="NEG-Pr-BGw"/>
                             <constraint firstItem="MXO-Gm-ma8" firstAttribute="centerX" secondItem="TEX-49-SNg" secondAttribute="centerX" id="a4d-td-03j"/>
                             <constraint firstItem="AJ3-87-Kpf" firstAttribute="bottom" secondItem="5Pj-sI-Yge" secondAttribute="bottom" id="jX2-7V-LFT"/>
-                            <constraint firstItem="SxG-Ba-Jxy" firstAttribute="leading" secondItem="5Pj-sI-Yge" secondAttribute="leading" constant="40" id="ksD-6l-3fK"/>
                             <constraint firstItem="AJ3-87-Kpf" firstAttribute="trailing" secondItem="5Pj-sI-Yge" secondAttribute="trailing" id="s4t-Mp-Je3"/>
                             <constraint firstItem="5Pj-sI-Yge" firstAttribute="bottom" secondItem="MXO-Gm-ma8" secondAttribute="bottom" constant="34" id="uL2-t1-ws3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4Ja-pE-1an"/>
+                    <tabBarItem key="tabBarItem" title="AR" image="cube.box" catalog="system" id="4Ja-pE-1an"/>
                     <connections>
                         <outlet property="arView" destination="AJ3-87-Kpf" id="d6Z-UF-4JI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUw-Ob-Ucy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nJl-ms-87u">
+                    <connections>
+                        <action selector="scaleUp:" destination="6xp-6J-7WQ" id="cGn-3c-SbO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iH1-ag-Zn7">
+                    <connections>
+                        <action selector="scaleDown:" destination="6xp-6J-7WQ" id="NPW-Hb-MUn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-200.00000000000003" y="896.65178571428567"/>
+            <point key="canvasLocation" x="-201" y="897"/>
         </scene>
         <!--Tree Map-->
         <scene sceneID="CzC-y6-UUP">
@@ -820,6 +836,14 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gna-lF-0qt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </mapView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="992-EP-SS2">
+                                <rect key="frame" x="354" y="732" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z7u-yX-c0n" appends="YES" id="teh-Fg-Vgq"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SkQ-cN-fkz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -836,8 +860,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPV-bS-8bg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Z7u-yX-c0n">
+                    <connections>
+                        <action selector="currentLocClick:" destination="hA4-bu-tIY" id="ayT-Lj-2aw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1755" y="897"/>
+            <point key="canvasLocation" x="-1168" y="897"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="dOb-3W-Hig">
@@ -973,8 +1002,10 @@
         <image name="daysTill" width="414" height="896"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="listName" width="684" height="262"/>
+        <image name="location" catalog="system" width="128" height="121"/>
         <image name="main main" width="414" height="896"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="minus" catalog="system" width="128" height="24"/>
         <image name="newClean" width="858" height="1248"/>
         <image name="newF" width="490" height="491"/>
         <image name="newT" width="490" height="491"/>
@@ -982,6 +1013,7 @@
         <image name="offerSign" width="300" height="156"/>
         <image name="paperplane.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="santaSide" width="302" height="481"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="wishList" width="414" height="896"/>

@@ -47,7 +47,7 @@ class TimerViewController: UIViewController {
         
         // Set Event Date
         var eventDateComponents = DateComponents()
-        eventDateComponents.year = 2020
+        eventDateComponents.year = 2021
         eventDateComponents.month = 12
         eventDateComponents.day = 24
         eventDateComponents.hour = 09

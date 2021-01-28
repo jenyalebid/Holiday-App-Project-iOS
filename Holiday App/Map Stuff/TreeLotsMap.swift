@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 import Contacts
 
-class Artwork: NSObject, MKAnnotation {
+class MapLot: NSObject, MKAnnotation {
     
   let title: String?
   let locationName: String?
@@ -33,8 +33,7 @@ class Artwork: NSObject, MKAnnotation {
     
     init?(feature: MKGeoJSONFeature) {
       // 1
-      guard
-        let point = feature.geometry.first as? MKPointAnnotation,
+      guard let point = feature.geometry.first as? MKPointAnnotation,
         // 2
         let propertiesData = feature.properties,
         let json = try? JSONSerialization.jsonObject(with: propertiesData),

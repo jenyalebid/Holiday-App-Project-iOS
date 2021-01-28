@@ -9,9 +9,13 @@ import ARKit
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var addObject: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Show debug and feature points
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, SCNDebugOptions.showWorldOrigin]
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -20,10 +24,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "TreeScene.scn")!
+        let scene = SCNScene(named: "tree.obj")!
         
         // Set the scene to the view
         sceneView.scene = scene
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +47,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
-
+    
     // MARK: - ARSCNViewDelegate
     
 /*

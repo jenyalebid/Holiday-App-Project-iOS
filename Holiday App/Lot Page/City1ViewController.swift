@@ -19,7 +19,8 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
    
     
     var treeIDSend = Int()
-    var current_lot = UserDefaults.standard.value(forKey: "lotName") as! Int
+//    var current_lot = UserDefaults.standard.value(forKey: "lotName") as! Int
+    var current_lot = 1
     //var trees = [Int]()
     
     
@@ -102,7 +103,6 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         super.viewDidLoad()
         
-        print("USER DEF", UserDefaults.standard.value(forKey: "lotName")!)
         
         treesCollectionView.delegate = self
         treesCollectionView.dataSource = self

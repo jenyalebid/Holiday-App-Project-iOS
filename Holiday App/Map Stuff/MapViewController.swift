@@ -15,18 +15,14 @@ class MapViewController: UIViewController {
 
     private var lots: [MapLot] = []
 
-    let geofireRef = Database.database().reference()
-
-
     let lotDatabase = Database.database().reference()
-    let locationManager = CLLocationManager()
-
-    var mapHasCenteredOnce = false
     
+    let locationManager = CLLocationManager()
+    var mapHasCenteredOnce = false
     var currentLoc = CLLocation()
     
     @IBOutlet weak var mapView: MKMapView!
-
+    @IBOutlet weak var locationsNumber: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +30,9 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow // the map follows user's location
 
-        getLocations()
-
-//        mapView.addAnnotations(lots)
-//                let ref = Database.database().reference()
-//                ref.childByAutoId().setValue(["lotName":"Pumkin City", "Tree Count":"Cool"])
+//        let ref = Database.database().reference()
+//        ref.childByAutoId().setValue(["lotName":"Pumkin City", "Tree Count":"Cool"])
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -67,47 +61,67 @@ class MapViewController: UIViewController {
 
     func centerMapOnLocation(location: CLLocation) {
 
-        let geoFire = GeoFire(firebaseRef: geofireRef)
+        let geoFire = GeoFire(firebaseRef: lotDatabase)
         
         // set the region around area
-        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 20000, longitudinalMeters: 20000)
-        mapView.setRegion(coordinateRegion, animated: true)
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+//        mapView.setRegion(coordinateRegion, animated: true)
         
         // set location looking for distance
         let center = CLLocation(latitude: coordinateRegion.center.latitude, longitude: coordinateRegion.center.longitude)
-        let circleQuery = geoFire.query(at: center, withRadius: 500)
-        
+        //let center = CLLocation(latitude: 51.49712853205043, longitude: -0.09649467336302968)
+        let circleQuery = geoFire.query(at: center, withRadius: 100.00)
         
         // set pan around distance from person
-        mapView.setCameraBoundary(
-            MKMapView.CameraBoundary(coordinateRegion: coordinateRegion),
-            animated: true)
+//        mapView.setCameraBoundary(
+//            MKMapView.CameraBoundary(coordinateRegion: coordinateRegion),
+//            animated: true)
+//
+//        // set camera zoom boundary
+//        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 20000)
+//        mapView.setCameraZoomRange(zoomRange, animated: false)
         
-        // set camera zoom boundary
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 20000)
-        mapView.setCameraZoomRange(zoomRange, animated: true)
+        //var lotCount = Int()
 
-//        // Query location by region
+        //Query location by region
 //        let span = MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
 //        let query = geoFire.query(with: coordinateRegion)
+//        var regionQuery = geoFire.queryWithRegion(query)
         
+        
+        //self.lotDatabase.child("lol").setValue(["username": "bob"])
+        //self.lotDatabase.setValue.
         // get the info from the data base
+            
+        var lotValue: NSDictionary?
+        //geoFire.setLocation(CLLocation(latitude: 51.506447245334954, longitude: -0.12690860725647274), forKey: "or2")
+        
         _ = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
             print("Key '\(String(describing: key))' entered the search area and is at location '\(String(describing: location))'")
             
+            //var lotInfo = [String:Any]()
             
-            // use struct to display data as a pin
-            let lot = MapLot(
-                title: "Lot Name",
-                locationName: "Lot Location",
-                discipline: "Sculpture",
-                coordinate: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
-            
-            self.mapView.addAnnotation(lot)
-            
+            self.lotDatabase.child(key).observeSingleEvent(of: .value) { (DataSnapshot) in
+                
+                //lotInfo = DataSnapshot.value as? [String : Any] ?? [nil]
+                //let lotInfo = DataSnapshot.value as? [String:Any]
+                
+                lotValue = DataSnapshot.value as? NSDictionary
+                
+                let lotName = lotValue?["name"] as? String ?? ""
+                //print(lotName)
+                
+                // use struct to display data as a pin
+                let lot = MapLot(
+                    title: lotName,
+                    locationName: lotName,
+                    discipline: "Sculpture",
+                    coordinate: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
+                //lotCount += lotCount
+                self.mapView.addAnnotation(lot)
+            }
+            //self.locationsNumber.text = "There are \(lotCount) Tree Lots near you."
         })
-        
-
     }
 
     // tells map to center
@@ -117,9 +131,9 @@ class MapViewController: UIViewController {
 
             // make sure the map doesn't keep recentering while walking
             if !mapHasCenteredOnce {
-                
+                print("center")
                 centerMapOnLocation(location: loc)
-                mapHasCenteredOnce = true
+                //mapHasCenteredOnce = true
             }
         }
     }
@@ -152,31 +166,31 @@ class MapViewController: UIViewController {
 //            print("GeoFire does not contain a location for \"firebase-hq\"")
 //          }
 //        }
-            
-        print("HERE")
     }
 
 
     @IBAction func currentLocClick(_ sender: Any) {
-
-        let buttonItem = MKUserTrackingBarButtonItem(mapView: mapView)
-        self.navigationItem.rightBarButtonItem = buttonItem
+        
+        print("get")
     }
+    
+
+    
 }
 
 
 extension MapViewController: MKMapViewDelegate {
 
-  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+
     guard let annotation = annotation as? MapLot else {
         
       return nil
     }
-    
+
     let identifier = "tree_lot"
     var view: MKMarkerAnnotationView
-    
+
     if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
       dequeuedView.annotation = annotation
       view = dequeuedView
@@ -188,7 +202,17 @@ extension MapViewController: MKMapViewDelegate {
       view.calloutOffset = CGPoint(x: -5, y: 5)
       view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
     }
-    
+
     return view
-  }
+    }
+    
+
+    func mapView(
+      _ mapView: MKMapView,
+      annotationView view: MKAnnotationView,
+      calloutAccessoryControlTapped control: UIControl
+    ) {
+      
+        performSegue(withIdentifier: "lot_tap", sender: self)
+    }
 }

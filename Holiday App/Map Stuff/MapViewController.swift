@@ -11,7 +11,17 @@ import Contacts
 import GeoFire
 import FirebaseDatabase
 
+
+
+
 class MapViewController: UIViewController {
+    
+    
+    var lotName = String()
+    var address = String()
+    var phone = String()
+    var lat = Double()
+    var long = Double()
 
     private var lots: [MapLot] = []
 
@@ -94,30 +104,33 @@ class MapViewController: UIViewController {
         // get the info from the data base
             
         var lotValue: NSDictionary?
-        //geoFire.setLocation(CLLocation(latitude: 51.506447245334954, longitude: -0.12690860725647274), forKey: "or2")
+        //geoFire.setLocation(CLLocation(latitude: 37.739167003963644, longitude: -122.40659010212623), forKey: "ca1")
         
         _ = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
             print("Key '\(String(describing: key))' entered the search area and is at location '\(String(describing: location))'")
             
             //var lotInfo = [String:Any]()
             
-            self.lotDatabase.child(key).observeSingleEvent(of: .value) { (DataSnapshot) in
+            self.lotDatabase.child(key).observeSingleEvent(of: .value) { [self] (DataSnapshot) in
                 
                 //lotInfo = DataSnapshot.value as? [String : Any] ?? [nil]
                 //let lotInfo = DataSnapshot.value as? [String:Any]
                 
                 lotValue = DataSnapshot.value as? NSDictionary
                 
-                let lotName = lotValue?["name"] as? String ?? ""
+                self.lotName = lotValue?["name"] as? String ?? ""
+                self.address = lotValue?["address"] as? String ?? ""
+                self.phone = lotValue?["phone"] as? String ?? ""
                 //print(lotName)
                 
                 // use struct to display data as a pin
                 let lot = MapLot(
-                    title: lotName,
-                    locationName: lotName,
-                    discipline: "Sculpture",
+                    title: self.lotName,
+                    locationName: self.address,
+                    discipline: self.phone,
                     coordinate: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
                 //lotCount += lotCount
+                lots.append(lot)
                 self.mapView.addAnnotation(lot)
             }
             //self.locationsNumber.text = "There are \(lotCount) Tree Lots near you."
@@ -212,7 +225,44 @@ extension MapViewController: MKMapViewDelegate {
       annotationView view: MKAnnotationView,
       calloutAccessoryControlTapped control: UIControl
     ) {
-      
+        
+        lotName = view.annotation?.title!! ?? "No Val"
+        address = view.annotation?.subtitle!! ?? "No Val"
+        
+        for i in lots {
+            
+            if i.locationName == lotName {
+                
+                phone = i.discipline ?? "No Value"
+                lat = i.coordinate.latitude
+                long = i.coordinate.longitude
+                
+                
+                break
+            }
+            lat = i.coordinate.latitude
+            long = i.coordinate.longitude
+            print("LAT ", lat, " LONG ", long)
+        }
+
         performSegue(withIdentifier: "lot_tap", sender: self)
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.destination is City1ViewController {
+            
+            let vc = segue.destination as? City1ViewController
+            vc?.localName = lotName
+            vc?.localAddress = address
+            vc?.localPhone = phone
+            vc?.localLat = lat
+            vc?.localLong = long
+            print(lots)
+        }
+        
+        
+    }
+    
 }

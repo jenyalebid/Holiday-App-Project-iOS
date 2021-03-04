@@ -16,7 +16,12 @@ let lot_struct = DataLoader().lotData
 
 class City1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-   
+    var localName = String()
+    var localAddress = String()
+    var localPhone = String()
+    
+    var localLat = Double()
+    var localLong = Double()
     
     var treeIDSend = Int()
 //    var current_lot = UserDefaults.standard.value(forKey: "lotName") as! Int
@@ -43,8 +48,8 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var trees_box: UIView!
     
     @IBOutlet weak var map_visual: UIVisualEffectView!
-    @IBOutlet weak var map_box: MKMapView!
-    @IBOutlet weak var location_map: MKMapView!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     
     @IBOutlet weak var lot_name: UILabel!
     @IBOutlet weak var lot_logo: UIImageView!
@@ -80,8 +85,8 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var directionsButton: UIButton!
     @IBAction func directions(_ sender: Any) {
         
-        let latitude: CLLocationDegrees = lot_struct[current_lot].lotLatCoord
-        let longitude: CLLocationDegrees = lot_struct[current_lot].lotLongCoord
+        let latitude: CLLocationDegrees = localLat
+        let longitude: CLLocationDegrees = localLong
         
         let regionDistance:CLLocationDistance = 600
         let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
@@ -92,7 +97,7 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         ]
         let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
         let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = lot_struct[current_lot].lotName
+        mapItem.name = localName
         mapItem.openInMaps(launchOptions: options)
     }
     
@@ -108,12 +113,12 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         treesCollectionView.dataSource = self
         
         map_visual.layer.cornerRadius = 10.0
-        map_box.layer.cornerRadius = 10.0
+        //map_box.layer.cornerRadius = 10.0
         
         //trees_visual.clipsToBounds = true
         trees_visual.layer.cornerRadius = 10.0
         trees_box.layer.cornerRadius = 10.0
-        map_box.layer.cornerRadius = 10.0
+        //map_box.layer.cornerRadius = 10.0
         
         
         directionsButton.layer.cornerRadius = 10.0
@@ -126,25 +131,28 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         }
         else {
             
-            lot_name.text = lot_struct[current_lot].lotName
+            lot_name.text = localName
         }
         
+        addressLabel.text = localAddress
+        phoneLabel.text = localPhone
         
         
         
         
-        // map location
-        let initialLocation = CLLocation(latitude: lot_struct[current_lot].lotLatCoord, longitude: lot_struct[current_lot].lotLongCoord)
-        //var coordinate = CLLocationCoordinate2D(latitude: 38.242910, longitude: -122.63161)
         
-        // map annotation
-        let lot_location = MKPointAnnotation()
-        lot_location.title = lot_struct[current_lot].lotName
-        lot_location.coordinate = CLLocationCoordinate2D(latitude: lot_struct[current_lot].lotLatCoord, longitude: lot_struct[current_lot].lotLongCoord)
-        
-        // center map and annotation
-        location_map.centerToLocation(initialLocation)
-        location_map.addAnnotation(lot_location)
+//        // map location
+//        let initialLocation = CLLocation(latitude: lot_struct[current_lot].lotLatCoord, longitude: lot_struct[current_lot].lotLongCoord)
+//        //var coordinate = CLLocationCoordinate2D(latitude: 38.242910, longitude: -122.63161)
+//
+//        // map annotation
+//        let lot_location = MKPointAnnotation()
+//        lot_location.title = lot_struct[current_lot].lotName
+//        lot_location.coordinate = CLLocationCoordinate2D(latitude: lot_struct[current_lot].lotLatCoord, longitude: lot_struct[current_lot].lotLongCoord)
+//
+//        // center map and annotation
+//        //location_map.centerToLocation(initialLocation)
+//        //location_map.addAnnotation(lot_location)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -207,18 +215,4 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
             //print("In trees prepare")
         }
     }
-}
-
-// interactive map info
-private extension MKMapView {
-  func centerToLocation(
-    _ location: CLLocation,
-    regionRadius: CLLocationDistance = 600
-  ) {
-    let coordinateRegion = MKCoordinateRegion(
-      center: location.coordinate,
-      latitudinalMeters: regionRadius,
-      longitudinalMeters: regionRadius)
-    setRegion(coordinateRegion, animated: true)
-  }
 }

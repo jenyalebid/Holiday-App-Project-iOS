@@ -17,6 +17,11 @@ class Trees1ViewController: UIViewController {
     @IBOutlet weak var treeType_desc: UILabel!
     @IBOutlet weak var treeTypeDesc_scrollView: UIScrollView!
     
+    @IBAction func ARClick(_ sender: Any) {
+        print("HEY")
+        performSegue(withIdentifier: "arClick_seg", sender: self)
+    }
+    
     
     var localIndex = Int()
     var localTreeName = String()

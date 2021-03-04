@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,12 +18,12 @@
 		B12B4377253A8DE20082BDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12B4375253A8DE20082BDCF /* LaunchScreen.storyboard */; };
 		B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4380253A8EE30082BDCF /* City1ViewController.swift */; };
 		B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CDB2554922B002F4299 /* AboutVC.swift */; };
+		B16A163325E070920088D3D7 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B16A163225E070920088D3D7 /* FocusEntity */; };
 		B1706C8825C01359002A138C /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706C8725C01359002A138C /* RealityView.swift */; };
 		B1706CC725C0B94E002A138C /* tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CC625C0B94D002A138C /* tree.usdz */; };
-		B1706CCC25C0E11A002A138C /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CCB25C0E11A002A138C /* toy_drummer.usdz */; };
 		B1706CCF25C0E2FB002A138C /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706CCE25C0E2FB002A138C /* model.swift */; };
 		B1706D3225C24091002A138C /* ARViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3125C24091002A138C /* ARViewC.swift */; };
-		B1706D3525C24098002A138C /* TreeScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3425C24098002A138C /* TreeScene.rcproject */; };
+		B18A934225DF026F00C41705 /* TreeScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B18A934125DF026F00C41705 /* TreeScene.rcproject */; };
 		B19134D225BB679800B543D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B19134D125BB679800B543D6 /* GoogleService-Info.plist */; };
 		B1B7E74325551A6C0023A596 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B7E74225551A6C0023A596 /* data.json */; };
 		B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E74925551DAB0023A596 /* Trees.swift */; };
@@ -63,10 +63,9 @@
 		B1579CDB2554922B002F4299 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		B1706C8725C01359002A138C /* RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
 		B1706CC625C0B94D002A138C /* tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree.usdz; sourceTree = "<group>"; };
-		B1706CCB25C0E11A002A138C /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		B1706CCE25C0E2FB002A138C /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		B1706D3125C24091002A138C /* ARViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewC.swift; sourceTree = "<group>"; };
-		B1706D3425C24098002A138C /* TreeScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TreeScene.rcproject; sourceTree = "<group>"; };
+		B18A934125DF026F00C41705 /* TreeScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = TreeScene.rcproject; path = "Holiday App/TreeScene.rcproject"; sourceTree = SOURCE_ROOT; };
 		B19134D125BB679800B543D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1B7E74225551A6C0023A596 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B1B7E74925551DAB0023A596 /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16A163325E070920088D3D7 /* FocusEntity in Frameworks */,
 				F239BD696955EB559FCE542A /* Pods_Holiday_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,11 +141,11 @@
 		B12B4369253A8DE00082BDCF /* Holiday App */ = {
 			isa = PBXGroup;
 			children = (
+				B18A934125DF026F00C41705 /* TreeScene.rcproject */,
 				B12B4378253A8DE20082BDCF /* Info.plist */,
 				B19134D125BB679800B543D6 /* GoogleService-Info.plist */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
 				B1706D3125C24091002A138C /* ARViewC.swift */,
-				B1706D3425C24098002A138C /* TreeScene.rcproject */,
 				B1F6D77725B18E6A00A5B9BB /* ARViewController.swift */,
 				B1F6D78025B2694B00A5B9BB /* Additional */,
 				B1F6D77F25B2690300A5B9BB /* Default */,
@@ -160,7 +160,6 @@
 		B1706CC525C0B93F002A138C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B1706CCB25C0E11A002A138C /* toy_drummer.usdz */,
 				B1706CC625C0B94D002A138C /* tree.usdz */,
 			);
 			path = Models;
@@ -244,6 +243,7 @@
 			);
 			name = "Holiday App";
 			packageProductDependencies = (
+				B16A163225E070920088D3D7 /* FocusEntity */,
 			);
 			productName = "Holiday App";
 			productReference = B12B4367253A8DE00082BDCF /* Holiday App.app */;
@@ -273,6 +273,7 @@
 			);
 			mainGroup = B12B435E253A8DE00082BDCF;
 			packageReferences = (
+				B16A163125E070920088D3D7 /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = B12B4368253A8DE00082BDCF /* Products */;
 			projectDirPath = "";
@@ -293,7 +294,6 @@
 				B1B7E75025552E040023A596 /* lots.json in Resources */,
 				B1F6D6FA25B188DD00A5B9BB /* TreeScene.scn in Resources */,
 				B1EF2D4725C27D19009CBADC /* PublicArt.geojson in Resources */,
-				B1706CCC25C0E11A002A138C /* toy_drummer.usdz in Resources */,
 				B12B4372253A8DE00082BDCF /* Main.storyboard in Resources */,
 				B1B7E74325551A6C0023A596 /* data.json in Resources */,
 				B19134D225BB679800B543D6 /* GoogleService-Info.plist in Resources */,
@@ -350,7 +350,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1706D3525C24098002A138C /* TreeScene.rcproject in Sources */,
 				B1EF2D4E25C292F2009CBADC /* PokeAnnotation.swift in Sources */,
 				B1F6D77825B18E6A00A5B9BB /* ARViewController.swift in Sources */,
 				B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */,
@@ -370,6 +369,7 @@
 				B1ED2B9B25630F1400EC1291 /* TreeLotsMap.swift in Sources */,
 				B11B74242557AC5000E98925 /* SceneDelegate.swift in Sources */,
 				B1D6DD3A255A720100C283B8 /* TimerViewController.swift in Sources */,
+				B18A934225DF026F00C41705 /* TreeScene.rcproject in Sources */,
 				B12B436B253A8DE00082BDCF /* AppDelegate.swift in Sources */,
 				B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */,
 				B1706C8825C01359002A138C /* RealityView.swift in Sources */,
@@ -538,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -561,7 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -599,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B16A163125E070920088D3D7 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B16A163225E070920088D3D7 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16A163125E070920088D3D7 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B12B435F253A8DE00082BDCF /* Project object */;
 }

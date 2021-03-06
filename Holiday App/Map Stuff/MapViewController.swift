@@ -11,9 +11,6 @@ import Contacts
 import GeoFire
 import FirebaseDatabase
 
-
-
-
 class MapViewController: UIViewController {
     
     

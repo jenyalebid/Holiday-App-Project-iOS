@@ -5,13 +5,10 @@
 //  Created by Jenya Lebid on 1/27/21.
 //
 
-
-
-
 import UIKit
 import ARKit
 import RealityKit
-import FocusEntity
+
 
 class ARViewC: UIViewController {
     
@@ -34,22 +31,14 @@ class ARViewC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         // Load the "Box" scene from the "Experience" Reality File
 
-        let focusSquare = FocusEntity(on: self.arView, style: .classic(color: .red))
-        arView.scene.anchors.append(focusSquare)
+        //let focusSquare = FocusEntity(on: self.arView, style: .classic(color: .red))
+        //arView.scene.anchors.append(focusSquare)
         
         anchor = try! TreeScene.loadTree()
 
         //anchor.generateCollisionShapes(recursive: true)
-        //anchor.generateCollisionShapes(recursive: true)
-
-
-
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,13 +98,6 @@ class ARViewC: UIViewController {
             arView.scene.removeAnchor(anchor)
             treePlaced = false
         }
-        
-        
-
-        
-        
-
-
     }
     
     @IBAction func scaleUp(_ sender: Any) {
@@ -136,17 +118,12 @@ class ARViewC: UIViewController {
         treeWidth = treeWidth * 0.91
         viewDidAppear(true)
     }
-    
-    
-    
 }
 
 extension Double {
-    /// Rounds the double to decimal places value
+    // Rounds the double to decimal places value
     func rounded(toPlaces places:Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
 }
-
-

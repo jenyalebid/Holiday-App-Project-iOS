@@ -6,12 +6,9 @@ target 'Holiday App' do
   use_frameworks!
 
   # Pods for Holiday App
-  pod 'Firebase/Core'
+  pod 'Firebase/Core' '~> 7.5.0'
   pod 'Firebase/Database'
-  pod 'Firebase/Analytics'
 
-  pod 'Firebase/Database', '7.2-M1'
-  pod 'Firebase/Analytics', '7.2-M1'
   
   pod 'GeoFire', '~> 4.0'
 

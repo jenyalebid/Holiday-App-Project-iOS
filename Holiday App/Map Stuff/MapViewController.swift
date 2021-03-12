@@ -101,7 +101,7 @@ class MapViewController: UIViewController {
         // get the info from the data base
             
         var lotValue: NSDictionary?
-        //geoFire.setLocation(CLLocation(latitude: 37.739167003963644, longitude: -122.40659010212623), forKey: "ca1")
+        //geoFire.setLocation(CLLocation(latitude: 33.220640095278334, longitude: -117.22567915616423), forKey: "caJ")
         
         _ = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
             print("Key '\(String(describing: key))' entered the search area and is at location '\(String(describing: location))'")

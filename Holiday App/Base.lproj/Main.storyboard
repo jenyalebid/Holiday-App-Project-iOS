@@ -934,11 +934,33 @@
         <scene sceneID="jfB-RM-Cdb">
             <objects>
                 <hostingController id="VgC-QJ-Pd8" customClass="SUIARViewController" customModule="Holiday_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vh3-V4-ur1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLm-UQ-53e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N6W-1N-QYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tLm-UQ-53e" firstAttribute="top" secondItem="Vh3-V4-ur1" secondAttribute="top" id="3oM-nK-fX1"/>
+                            <constraint firstItem="tLm-UQ-53e" firstAttribute="leading" secondItem="N6W-1N-QYf" secondAttribute="leading" id="Eqy-8K-GVO"/>
+                            <constraint firstItem="tLm-UQ-53e" firstAttribute="trailing" secondItem="N6W-1N-QYf" secondAttribute="trailing" id="X7n-J0-6ci"/>
+                            <constraint firstItem="tLm-UQ-53e" firstAttribute="bottom" secondItem="N6W-1N-QYf" secondAttribute="bottom" id="X8S-qu-ZQq"/>
+                        </constraints>
+                    </view>
                     <tabBarItem key="tabBarItem" title="New AR" image="cube.box" catalog="system" id="bj7-E8-4Jw"/>
+                    <connections>
+                        <outlet property="localInnerView" destination="tLm-UQ-53e" id="79F-Cc-Awq"/>
+                        <outlet property="localVIew" destination="Vh3-V4-ur1" id="i4w-4h-uta"/>
+                    </connections>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N05-7E-1PM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1230" y="-50"/>
+            <point key="canvasLocation" x="-1230.4347826086957" y="-50.223214285714285"/>
         </scene>
         <!--AR-->
         <scene sceneID="RHh-HI-siI">

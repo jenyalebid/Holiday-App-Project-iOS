@@ -24,12 +24,13 @@
 		B14B838425FAE8C500461C99 /* TreePlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B838325FAE8C500461C99 /* TreePlacementView.swift */; };
 		B14B83FE25FAF26200461C99 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B14B83FD25FAF26200461C99 /* FocusEntity */; };
 		B14B840125FAF38600461C99 /* CustomAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B840025FAF38600461C99 /* CustomAR.swift */; };
-		B14B840425FAFA0B00461C99 /* tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B14B840325FAFA0B00461C99 /* tree.usdz */; };
+		B14B840425FAFA0B00461C99 /* chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B14B840325FAFA0B00461C99 /* chair.usdz */; };
+		B14B840925FC511300461C99 /* tree2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B14B840825FC511300461C99 /* tree2.usdz */; };
 		B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CDB2554922B002F4299 /* AboutVC.swift */; };
 		B15A844F25F2BE2F00C4BF60 /* SUIAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A844E25F2BE2F00C4BF60 /* SUIAR.swift */; };
 		B15A845325F2C46A00C4BF60 /* SUIARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A845225F2C46A00C4BF60 /* SUIARViewController.swift */; };
 		B1706C8825C01359002A138C /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706C8725C01359002A138C /* RealityView.swift */; };
-		B1706CC725C0B94E002A138C /* treeOld.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CC625C0B94D002A138C /* treeOld.usdz */; };
+		B1706CC725C0B94E002A138C /* tree1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CC625C0B94D002A138C /* tree1.usdz */; };
 		B1706CCF25C0E2FB002A138C /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706CCE25C0E2FB002A138C /* model.swift */; };
 		B1706D3225C24091002A138C /* ARViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3125C24091002A138C /* ARViewC.swift */; };
 		B17FACE925F9732400D94FC1 /* TreeBrowse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FACE825F9732400D94FC1 /* TreeBrowse.swift */; };
@@ -76,12 +77,13 @@
 		B14B837F25FAE55900461C99 /* TreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeApp.swift; sourceTree = "<group>"; };
 		B14B838325FAE8C500461C99 /* TreePlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePlacementView.swift; sourceTree = "<group>"; };
 		B14B840025FAF38600461C99 /* CustomAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAR.swift; sourceTree = "<group>"; };
-		B14B840325FAFA0B00461C99 /* tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree.usdz; sourceTree = "<group>"; };
+		B14B840325FAFA0B00461C99 /* chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair.usdz; sourceTree = "<group>"; };
+		B14B840825FC511300461C99 /* tree2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree2.usdz; sourceTree = "<group>"; };
 		B1579CDB2554922B002F4299 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		B15A844E25F2BE2F00C4BF60 /* SUIAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIAR.swift; sourceTree = "<group>"; };
 		B15A845225F2C46A00C4BF60 /* SUIARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIARViewController.swift; sourceTree = "<group>"; };
 		B1706C8725C01359002A138C /* RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
-		B1706CC625C0B94D002A138C /* treeOld.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = treeOld.usdz; sourceTree = "<group>"; };
+		B1706CC625C0B94D002A138C /* tree1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree1.usdz; sourceTree = "<group>"; };
 		B1706CCE25C0E2FB002A138C /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		B1706D3125C24091002A138C /* ARViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewC.swift; sourceTree = "<group>"; };
 		B17FACE825F9732400D94FC1 /* TreeBrowse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeBrowse.swift; sourceTree = "<group>"; };
@@ -189,8 +191,9 @@
 		B1706CC525C0B93F002A138C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B1706CC625C0B94D002A138C /* treeOld.usdz */,
-				B14B840325FAFA0B00461C99 /* tree.usdz */,
+				B14B840825FC511300461C99 /* tree2.usdz */,
+				B1706CC625C0B94D002A138C /* tree1.usdz */,
+				B14B840325FAFA0B00461C99 /* chair.usdz */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,11 +327,12 @@
 				B1B7E75025552E040023A596 /* lots.json in Resources */,
 				B1F6D6FA25B188DD00A5B9BB /* TreeScene.scn in Resources */,
 				B1EF2D4725C27D19009CBADC /* PublicArt.geojson in Resources */,
+				B14B840925FC511300461C99 /* tree2.usdz in Resources */,
 				B12B4372253A8DE00082BDCF /* Main.storyboard in Resources */,
 				B1B7E74325551A6C0023A596 /* data.json in Resources */,
 				B19134D225BB679800B543D6 /* GoogleService-Info.plist in Resources */,
-				B14B840425FAFA0B00461C99 /* tree.usdz in Resources */,
-				B1706CC725C0B94E002A138C /* treeOld.usdz in Resources */,
+				B14B840425FAFA0B00461C99 /* chair.usdz in Resources */,
+				B1706CC725C0B94E002A138C /* tree1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -601,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;

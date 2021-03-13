@@ -16,6 +16,8 @@ struct PlacementView: View {
         
         HStack {
             
+            Spacer()
+            
             PlacementButton(systemIconName: "xmark.circle.fill") {
                 
                 print("Placement Pressed")

@@ -37,6 +37,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     @EnvironmentObject var placeSettings: PlacementSettings
     
+    
     func makeUIView(context: Context) -> CustomAR {
         
         let arView = CustomAR(frame: .zero)
@@ -96,6 +97,15 @@ struct ARViewContainer: UIViewRepresentable {
         anchorEntity.addChild(cloneEntity)
         
         // place
+        
+        arView.scene.addAnchor(anchorEntity)
+        print("Object Placed")
+        
+    
+        
+        
+        
+        
     }
 }
 

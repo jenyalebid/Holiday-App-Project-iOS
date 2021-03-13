@@ -78,9 +78,10 @@ struct TreeModels {
     
     init() {
         
-        let pineTree = TreeModel(name: "tree", category: .tree, scaleComp: 0.32/100)
+        let tree1 = TreeModel(name: "tree1", category: .tree, scaleComp: 0.80/100)
+        let tree2 = TreeModel(name: "tree2", category: .tree, scaleComp: 0.80/10)
         
-        self.all += [pineTree]
+        self.all += [tree1, tree2]
     }
     
     func get(category: ModelCat) -> [TreeModel] {

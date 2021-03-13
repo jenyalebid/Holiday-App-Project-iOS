@@ -59,6 +59,7 @@ struct ControlButton: View {
             }
             .frame(width: 50, height: 50)
             .cornerRadius(8.0)
+            .padding(.top, 20)
         }
         .padding(.top, 20)
         .padding(.trailing, 20)
@@ -74,7 +75,7 @@ struct ControlButtonBar: View {
         
         HStack {
             
-            ControlButtonSingle(systemIconName: "square.grid.2x2") {
+            ControlButtonSingle(systemIconName: "minus.circle") {
                 
                 print("Button Press")
             }
@@ -93,7 +94,7 @@ struct ControlButtonBar: View {
             
             Spacer()
             
-            ControlButtonSingle(systemIconName: "square.grid.2x2") {
+            ControlButtonSingle(systemIconName: "plus.circle") {
                 
                 print("Button Press")
             }

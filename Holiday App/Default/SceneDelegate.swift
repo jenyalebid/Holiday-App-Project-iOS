@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 // CITY SELECT
         var vcIdentifier = String()
         
-        vcIdentifier = "startTabController"
+        vcIdentifier = "ViewController"
         
 
 //        if (UserDefaults.standard.value(forKey: "lotName") as? Int) != nil && (UserDefaults.standard.value(forKey: "lotName") as? Int) != 3 {

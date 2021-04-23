@@ -18,24 +18,19 @@
 		B12B4377253A8DE20082BDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12B4375253A8DE20082BDCF /* LaunchScreen.storyboard */; };
 		B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B4380253A8EE30082BDCF /* City1ViewController.swift */; };
 		B14B837625F40C1300461C99 /* ARControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B837525F40C1300461C99 /* ARControlView.swift */; };
-		B14B837A25FAB2C600461C99 /* TreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B837925FAB2C600461C99 /* TreeModel.swift */; };
-		B14B837D25FAC83E00461C99 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B837C25FAC83E00461C99 /* PlacementSettings.swift */; };
-		B14B838025FAE55900461C99 /* TreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B837F25FAE55900461C99 /* TreeApp.swift */; };
-		B14B838425FAE8C500461C99 /* TreePlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B838325FAE8C500461C99 /* TreePlacementView.swift */; };
-		B14B83FE25FAF26200461C99 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B14B83FD25FAF26200461C99 /* FocusEntity */; };
-		B14B840125FAF38600461C99 /* CustomAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B840025FAF38600461C99 /* CustomAR.swift */; };
-		B14B840425FAFA0B00461C99 /* chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B14B840325FAFA0B00461C99 /* chair.usdz */; };
-		B14B840925FC511300461C99 /* tree2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B14B840825FC511300461C99 /* tree2.usdz */; };
 		B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579CDB2554922B002F4299 /* AboutVC.swift */; };
 		B15A844F25F2BE2F00C4BF60 /* SUIAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A844E25F2BE2F00C4BF60 /* SUIAR.swift */; };
 		B15A845325F2C46A00C4BF60 /* SUIARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A845225F2C46A00C4BF60 /* SUIARViewController.swift */; };
 		B1706C8825C01359002A138C /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706C8725C01359002A138C /* RealityView.swift */; };
-		B1706CC725C0B94E002A138C /* tree1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CC625C0B94D002A138C /* tree1.usdz */; };
+		B1706CC725C0B94E002A138C /* tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1706CC625C0B94D002A138C /* tree.usdz */; };
 		B1706CCF25C0E2FB002A138C /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706CCE25C0E2FB002A138C /* model.swift */; };
 		B1706D3225C24091002A138C /* ARViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1706D3125C24091002A138C /* ARViewC.swift */; };
+		B17C979D26325ED60064DF30 /* TreeSizeGotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C979C26325ED50064DF30 /* TreeSizeGotViewController.swift */; };
 		B17FACE925F9732400D94FC1 /* TreeBrowse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FACE825F9732400D94FC1 /* TreeBrowse.swift */; };
 		B18A934225DF026F00C41705 /* TreeScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B18A934125DF026F00C41705 /* TreeScene.rcproject */; };
 		B19134D225BB679800B543D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B19134D125BB679800B543D6 /* GoogleService-Info.plist */; };
+		B19FC18226333EEA003ADAAA /* clickSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B19FC18126333EEA003ADAAA /* clickSound.wav */; };
+		B19FC18526333EEF003ADAAA /* sizeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B19FC18426333EEF003ADAAA /* sizeSound.wav */; };
 		B1B7E74325551A6C0023A596 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B7E74225551A6C0023A596 /* data.json */; };
 		B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E74925551DAB0023A596 /* Trees.swift */; };
 		B1B7E74D255526630023A596 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E74C255526630023A596 /* DataLoader.swift */; };
@@ -43,6 +38,8 @@
 		B1B7E75325552F7B0023A596 /* Lots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B7E75225552F7B0023A596 /* Lots.swift */; };
 		B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */; };
 		B1BCDF09253CD98900FDC3BB /* Trees1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */; };
+		B1C17963263325D800035158 /* BGMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1C17962263325D800035158 /* BGMusic.mp3 */; };
+		B1C2F48326310EBA002C0A2E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B1C2F48226310EBA002C0A2E /* FocusEntity */; };
 		B1D6DD3A255A720100C283B8 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD39255A720100C283B8 /* TimerViewController.swift */; };
 		B1D6DD4F255B295900C283B8 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD4E255B295900C283B8 /* WishListViewController.swift */; };
 		B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D6DD59255B3E3000C283B8 /* WishTableViewCell.swift */; };
@@ -72,23 +69,19 @@
 		B12B4378253A8DE20082BDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12B4380253A8EE30082BDCF /* City1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City1ViewController.swift; sourceTree = "<group>"; };
 		B14B837525F40C1300461C99 /* ARControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARControlView.swift; sourceTree = "<group>"; };
-		B14B837925FAB2C600461C99 /* TreeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeModel.swift; sourceTree = "<group>"; };
-		B14B837C25FAC83E00461C99 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
-		B14B837F25FAE55900461C99 /* TreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeApp.swift; sourceTree = "<group>"; };
-		B14B838325FAE8C500461C99 /* TreePlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePlacementView.swift; sourceTree = "<group>"; };
-		B14B840025FAF38600461C99 /* CustomAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAR.swift; sourceTree = "<group>"; };
-		B14B840325FAFA0B00461C99 /* chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair.usdz; sourceTree = "<group>"; };
-		B14B840825FC511300461C99 /* tree2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree2.usdz; sourceTree = "<group>"; };
 		B1579CDB2554922B002F4299 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		B15A844E25F2BE2F00C4BF60 /* SUIAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIAR.swift; sourceTree = "<group>"; };
 		B15A845225F2C46A00C4BF60 /* SUIARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIARViewController.swift; sourceTree = "<group>"; };
 		B1706C8725C01359002A138C /* RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
-		B1706CC625C0B94D002A138C /* tree1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree1.usdz; sourceTree = "<group>"; };
+		B1706CC625C0B94D002A138C /* tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree.usdz; sourceTree = "<group>"; };
 		B1706CCE25C0E2FB002A138C /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		B1706D3125C24091002A138C /* ARViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewC.swift; sourceTree = "<group>"; };
+		B17C979C26325ED50064DF30 /* TreeSizeGotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSizeGotViewController.swift; sourceTree = "<group>"; };
 		B17FACE825F9732400D94FC1 /* TreeBrowse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeBrowse.swift; sourceTree = "<group>"; };
 		B18A934125DF026F00C41705 /* TreeScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = TreeScene.rcproject; path = "Holiday App/TreeScene.rcproject"; sourceTree = SOURCE_ROOT; };
 		B19134D125BB679800B543D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B19FC18126333EEA003ADAAA /* clickSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clickSound.wav; sourceTree = "<group>"; };
+		B19FC18426333EEF003ADAAA /* sizeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sizeSound.wav; sourceTree = "<group>"; };
 		B1B7E74225551A6C0023A596 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B1B7E74925551DAB0023A596 /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
 		B1B7E74C255526630023A596 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -96,6 +89,7 @@
 		B1B7E75225552F7B0023A596 /* Lots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lots.swift; sourceTree = "<group>"; };
 		B1BCDF05253B83FA00FDC3BB /* Trees1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1CollectionViewCell.swift; sourceTree = "<group>"; };
 		B1BCDF08253CD98800FDC3BB /* Trees1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees1ViewController.swift; sourceTree = "<group>"; };
+		B1C17962263325D800035158 /* BGMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGMusic.mp3; sourceTree = "<group>"; };
 		B1D6DD39255A720100C283B8 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		B1D6DD4E255B295900C283B8 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		B1D6DD59255B3E3000C283B8 /* WishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14B83FE25FAF26200461C99 /* FocusEntity in Frameworks */,
+				B1C2F48326310EBA002C0A2E /* FocusEntity in Frameworks */,
 				F239BD696955EB559FCE542A /* Pods_Holiday_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				B1F6D6F925B188DD00A5B9BB /* TreeScene.scn */,
-				B1706C8725C01359002A138C /* RealityView.swift */,
-				B1706CCE25C0E2FB002A138C /* model.swift */,
 				B1706CC525C0B93F002A138C /* Models */,
 				B12B4369253A8DE00082BDCF /* Holiday App */,
 				B12B4368253A8DE00082BDCF /* Products */,
@@ -164,20 +156,12 @@
 			isa = PBXGroup;
 			children = (
 				B18A934125DF026F00C41705 /* TreeScene.rcproject */,
-				B15A844E25F2BE2F00C4BF60 /* SUIAR.swift */,
-				B14B840025FAF38600461C99 /* CustomAR.swift */,
-				B14B837525F40C1300461C99 /* ARControlView.swift */,
-				B17FACE825F9732400D94FC1 /* TreeBrowse.swift */,
-				B14B838325FAE8C500461C99 /* TreePlacementView.swift */,
-				B14B837F25FAE55900461C99 /* TreeApp.swift */,
-				B14B837925FAB2C600461C99 /* TreeModel.swift */,
-				B14B837C25FAC83E00461C99 /* PlacementSettings.swift */,
-				B15A845225F2C46A00C4BF60 /* SUIARViewController.swift */,
 				B12B4378253A8DE20082BDCF /* Info.plist */,
 				B19134D125BB679800B543D6 /* GoogleService-Info.plist */,
 				B12B4370253A8DE00082BDCF /* Main.storyboard */,
 				B1706D3125C24091002A138C /* ARViewC.swift */,
-				B1F6D77725B18E6A00A5B9BB /* ARViewController.swift */,
+				B17C979C26325ED50064DF30 /* TreeSizeGotViewController.swift */,
+				B1A2E1C826321762006C2881 /* SwiftUI */,
 				B1F6D78025B2694B00A5B9BB /* Additional */,
 				B1F6D77F25B2690300A5B9BB /* Default */,
 				B1F6D77B25B2679E00A5B9BB /* Not Used */,
@@ -191,11 +175,23 @@
 		B1706CC525C0B93F002A138C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B14B840825FC511300461C99 /* tree2.usdz */,
-				B1706CC625C0B94D002A138C /* tree1.usdz */,
-				B14B840325FAFA0B00461C99 /* chair.usdz */,
+				B1706CC625C0B94D002A138C /* tree.usdz */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B1A2E1C826321762006C2881 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B1706C8725C01359002A138C /* RealityView.swift */,
+				B1706CCE25C0E2FB002A138C /* model.swift */,
+				B1F6D77725B18E6A00A5B9BB /* ARViewController.swift */,
+				B15A844E25F2BE2F00C4BF60 /* SUIAR.swift */,
+				B14B837525F40C1300461C99 /* ARControlView.swift */,
+				B17FACE825F9732400D94FC1 /* TreeBrowse.swift */,
+				B15A845225F2C46A00C4BF60 /* SUIARViewController.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		B1BCDF0F253D4D7300FDC3BB /* Lot Page */ = {
@@ -250,7 +246,10 @@
 		B1F6D78025B2694B00A5B9BB /* Additional */ = {
 			isa = PBXGroup;
 			children = (
+				B1C17962263325D800035158 /* BGMusic.mp3 */,
+				B19FC18126333EEA003ADAAA /* clickSound.wav */,
 				B11B744B255887BB00E98925 /* IntroViewController.swift */,
+				B19FC18426333EEF003ADAAA /* sizeSound.wav */,
 				B1579CDB2554922B002F4299 /* AboutVC.swift */,
 				B1D6DD39255A720100C283B8 /* TimerViewController.swift */,
 			);
@@ -276,7 +275,7 @@
 			);
 			name = "Holiday App";
 			packageProductDependencies = (
-				B14B83FD25FAF26200461C99 /* FocusEntity */,
+				B1C2F48226310EBA002C0A2E /* FocusEntity */,
 			);
 			productName = "Holiday App";
 			productReference = B12B4367253A8DE00082BDCF /* Holiday App.app */;
@@ -306,7 +305,7 @@
 			);
 			mainGroup = B12B435E253A8DE00082BDCF;
 			packageReferences = (
-				B14B83FC25FAF26200461C99 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				B1C2F48126310EBA002C0A2E /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = B12B4368253A8DE00082BDCF /* Products */;
 			projectDirPath = "";
@@ -322,17 +321,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C17963263325D800035158 /* BGMusic.mp3 in Resources */,
 				B12B4377253A8DE20082BDCF /* LaunchScreen.storyboard in Resources */,
 				B12B4374253A8DE20082BDCF /* Assets.xcassets in Resources */,
 				B1B7E75025552E040023A596 /* lots.json in Resources */,
 				B1F6D6FA25B188DD00A5B9BB /* TreeScene.scn in Resources */,
+				B19FC18226333EEA003ADAAA /* clickSound.wav in Resources */,
 				B1EF2D4725C27D19009CBADC /* PublicArt.geojson in Resources */,
-				B14B840925FC511300461C99 /* tree2.usdz in Resources */,
 				B12B4372253A8DE00082BDCF /* Main.storyboard in Resources */,
+				B19FC18526333EEF003ADAAA /* sizeSound.wav in Resources */,
 				B1B7E74325551A6C0023A596 /* data.json in Resources */,
 				B19134D225BB679800B543D6 /* GoogleService-Info.plist in Resources */,
-				B14B840425FAFA0B00461C99 /* chair.usdz in Resources */,
-				B1706CC725C0B94E002A138C /* tree1.usdz in Resources */,
+				B1706CC725C0B94E002A138C /* tree.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,9 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14B840125FAF38600461C99 /* CustomAR.swift in Sources */,
 				B1EF2D4E25C292F2009CBADC /* PokeAnnotation.swift in Sources */,
-				B14B837A25FAB2C600461C99 /* TreeModel.swift in Sources */,
 				B1F6D77825B18E6A00A5B9BB /* ARViewController.swift in Sources */,
 				B1D6DD5A255B3E3000C283B8 /* WishTableViewCell.swift in Sources */,
 				B11B739E2557840C00E98925 /* NavigationViewController.swift in Sources */,
@@ -397,22 +395,20 @@
 				B1B7E75325552F7B0023A596 /* Lots.swift in Sources */,
 				B1B7E74D255526630023A596 /* DataLoader.swift in Sources */,
 				B1ED2B97256306E100EC1291 /* MapViewController.swift in Sources */,
-				B14B838025FAE55900461C99 /* TreeApp.swift in Sources */,
 				B1706D3225C24091002A138C /* ARViewC.swift in Sources */,
 				B1B7E74A25551DAB0023A596 /* Trees.swift in Sources */,
 				B12B436F253A8DE00082BDCF /* ViewController.swift in Sources */,
 				B12B4381253A8EE30082BDCF /* City1ViewController.swift in Sources */,
+				B17C979D26325ED60064DF30 /* TreeSizeGotViewController.swift in Sources */,
 				B1706CCF25C0E2FB002A138C /* model.swift in Sources */,
 				B15A845325F2C46A00C4BF60 /* SUIARViewController.swift in Sources */,
 				B1BCDF06253B83FA00FDC3BB /* Trees1CollectionViewCell.swift in Sources */,
 				B15A844F25F2BE2F00C4BF60 /* SUIAR.swift in Sources */,
 				B1ED2B9B25630F1400EC1291 /* TreeLotsMap.swift in Sources */,
 				B11B74242557AC5000E98925 /* SceneDelegate.swift in Sources */,
-				B14B838425FAE8C500461C99 /* TreePlacementView.swift in Sources */,
 				B14B837625F40C1300461C99 /* ARControlView.swift in Sources */,
 				B17FACE925F9732400D94FC1 /* TreeBrowse.swift in Sources */,
 				B1D6DD3A255A720100C283B8 /* TimerViewController.swift in Sources */,
-				B14B837D25FAC83E00461C99 /* PlacementSettings.swift in Sources */,
 				B18A934225DF026F00C41705 /* TreeScene.rcproject in Sources */,
 				B12B436B253A8DE00082BDCF /* AppDelegate.swift in Sources */,
 				B1579CDC2554922B002F4299 /* AboutVC.swift in Sources */,
@@ -582,7 +578,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -590,7 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theholidayapp.holiday-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -605,7 +601,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KPJW7A75Q6;
 				INFOPLIST_FILE = "Holiday App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -613,7 +609,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theholidayapp.holiday-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -645,20 +641,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B14B83FC25FAF26200461C99 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+		B1C2F48126310EBA002C0A2E /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.1;
+				minimumVersion = 2.2.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B14B83FD25FAF26200461C99 /* FocusEntity */ = {
+		B1C2F48226310EBA002C0A2E /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B14B83FC25FAF26200461C99 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			package = B1C2F48126310EBA002C0A2E /* XCRemoteSwiftPackageReference "FocusEntity" */;
 			productName = FocusEntity;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -9,6 +9,8 @@ target 'Holiday App' do
   pod 'Firebase/Core' '~> 7.5.0'
   pod 'Firebase/Database'
 
+  pod 'EasyTipView', '~> 2.1'
+
   
   pod 'GeoFire', '~> 4.0'
 

@@ -13,5 +13,30 @@
     "libraryIdentifier" : "c84f37b8466569424b4d240574432086",
     "format" : "model",
     "displayName" : "t1.usdz"
+  },
+  {
+    "libraryIdentifier" : "bfde91f653190f2ac0451f4a93db5bd4",
+    "format" : "model",
+    "displayName" : "christmas_tree_obj.usdz"
+  },
+  {
+    "libraryIdentifier" : "4269b593af91a7e1367e7a8a4efea90e",
+    "format" : "model",
+    "displayName" : "toy_drummer.usdz"
+  },
+  {
+    "libraryIdentifier" : "3f5956831068452909e265b5cb310508",
+    "format" : "model",
+    "displayName" : "tree3.usdz"
+  },
+  {
+    "libraryIdentifier" : "c410ea5513700e3daff6b8216cac9dcd",
+    "format" : "model",
+    "displayName" : "tree4.usdz"
+  },
+  {
+    "libraryIdentifier" : "7dd35a373abbd02066745a48266ce5d4",
+    "format" : "audio",
+    "displayName" : "494071__kinoton__big-tree-fall-in-forest.wav"
   }
 ]

@@ -76,10 +76,6 @@ class City1ViewController: UIViewController, UICollectionViewDelegate, UICollect
         }
     }
     
-    
-    
-    
-    
     // Directions button redirect
     
     @IBOutlet weak var directionsButton: UIButton!

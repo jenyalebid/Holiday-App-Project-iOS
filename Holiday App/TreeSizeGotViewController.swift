@@ -12,7 +12,7 @@ class TreeSizeGotViewController: UIViewController {
     
     @IBOutlet weak var treeh: UILabel!
     @IBOutlet weak var treew: UILabel!
-    @IBOutlet weak var contButton: UIButton!
+    @IBOutlet weak var contButton: UIImageView!
     
     var clickSound = AVAudioPlayer()
     
@@ -50,6 +50,25 @@ class TreeSizeGotViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func toLearn(_ sender: Any) {
+        
+        clickSound.play()
+        
+        if let url = URL(string: "https://itschristmaskeepitreal.com/tree-guide/") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func goBack(_ sender: Any) {
+        
+        
+        clickSound.play()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

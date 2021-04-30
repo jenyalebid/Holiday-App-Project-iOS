@@ -10,7 +10,7 @@ import AVFoundation
 
 class IntroViewController: UIViewController {
     
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButton: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     @IBOutlet weak var logo: UIImageView!
@@ -43,7 +43,7 @@ class IntroViewController: UIViewController {
         
         
         
-        startButton.layer.cornerRadius = 10.0
+        //startButton.layer.cornerRadius = 10.0
 
         // Do any additional setup after loading the view.
     }
